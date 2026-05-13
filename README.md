@@ -96,8 +96,8 @@ LearnPlaywrightBasics2X/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/msengar23/LearnPlaywrightBasics2X.git
-   cd LearnPlaywrightBasics2X
+   git clone https://github.com/RJ-626/LearnPlaywright2x.git
+   cd LearnPlaywright2X
    ```
 
 2. **Open in VS Code:**
