@@ -1,4 +1,4 @@
-# LearnPlaywrightBasics2X
+# LearnPlaywright2X
 
 A comprehensive learning repository for **JavaScript fundamentals** and **Playwright automation testing** concepts. This project is organized into chapters covering everything from basic JavaScript syntax to advanced automation testing patterns.
 
@@ -102,7 +102,7 @@ LearnPlaywrightBasics2X/
 
 2. **Open in VS Code:**
    ```bash
-   code .
+   code.
    ```
 
 3. **Run JavaScript files:**
