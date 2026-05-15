@@ -15,6 +15,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 02: JavaScript Concepts](#chapter-02-javascript-concepts)
   - [Chapter 03: Identifiers & Literals](#chapter-03-identifiers--literals)
   - [Chapter 04: JavaScript Concepts - Variables, Functions & Scope](#chapter-04-javascript-concepts---variables-functions--scope)
+- [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
 - [Running the Code](#running-the-code)
 - [Contributing](#contributing)
@@ -199,6 +200,92 @@ Deep dive into JavaScript variables, functions, and scoping mechanisms:
 
 ---
 
+---
+
+## Hoisting and Temporal Dead Zone (TDZ)
+
+### What is Hoisting?
+
+**Hoisting** is JavaScript's default behavior of moving **declarations** to the top of their containing scope during the compilation phase (before code execution).
+
+> **Important:** Only declarations are hoisted, NOT initializations/assignments.
+
+### `var` Hoisting
+
+With `var`, the **declaration** is hoisted and initialized with `undefined`. The assignment stays at the original line.
+
+```javascript
+console.log(myVar); // Output: undefined (not an error!)
+var myVar = 10;
+console.log(myVar); // Output: 10
+```
+
+**What JavaScript sees internally:**
+```javascript
+var myVar;           // Declaration hoisted to top
+console.log(myVar);   // undefined
+myVar = 10;          // Assignment stays in place
+console.log(myVar);   // 10
+```
+
+### `let` and `const` Hoisting + TDZ
+
+`let` and `const` are **also hoisted**, but they enter the **Temporal Dead Zone (TDZ)**.
+
+#### What is TDZ?
+
+The **Temporal Dead Zone** is the period between when a variable is **hoisted** (enters scope) and when it is **declared/initialized**. During this time, the variable exists but **cannot be accessed**.
+
+> Accessing a variable in the TDZ throws a `ReferenceError`.
+
+```javascript
+console.log(myLet); // ❌ ReferenceError: Cannot access 'myLet' before initialization
+let myLet = 20;
+```
+
+### Comparison Table
+
+| Feature | `var` | `let` | `const` |
+|:---|:---|:---|:---|
+| **Hoisted?** | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Hoisted Value** | `undefined` | TDZ (uninitialized) | TDZ (uninitialized) |
+| **Accessible before declaration?** | ✅ Yes (undefined) | ❌ No (ReferenceError) | ❌ No (ReferenceError) |
+| **Scope** | Function scope | Block scope `{}` | Block scope `{}` |
+| **Can redeclare?** | ✅ Yes | ❌ No | ❌ No |
+| **Can reassign?** | ✅ Yes | ✅ Yes | ❌ No |
+| **Must initialize?** | ❌ No | ❌ No | ✅ Yes |
+
+### Function Hoisting
+
+Function **declarations** are hoisted **completely** (both name and body).
+
+```javascript
+sayHello(); // ✅ "Hello!" - Works perfectly!
+
+function sayHello() {
+    console.log("Hello!");
+}
+```
+
+**Function expressions are NOT hoisted the same way:**
+
+```javascript
+sayHi(); // ❌ TypeError: sayHi is not a function
+var sayHi = function() {
+    console.log("Hi!");
+};
+```
+
+### Best Practices
+
+1. **Use `const` by default** — prevents accidental reassignment
+2. **Use `let` when you need to reassign** — loops, counters, conditionals
+3. **Avoid `var`** — to prevent hoisting confusion and function scope leaks
+4. **Declare variables at the top of their scope** — makes hoisting explicit and avoids TDZ surprises
+5. **Initialize variables when you declare them** — cleaner code, fewer bugs
+
+---
+
 ## VS Code Tips
 
 ### Recommended Extensions
@@ -287,6 +374,7 @@ node chapter_04_Javascript_Concepts.js/17_Hoisting_Functions.js
 | **Keywords** | JavaScript keywords with examples |
 | **Literals** | String, Number, Boolean, Array, Object, Regex |
 | **Variables & Functions** | var/let/const, Function scope, Block scope, Hoisting |
+| **Hoisting & TDZ** | var/let/const hoisting, Temporal Dead Zone, Best practices |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
 | **Best Practices** | Naming conventions, Code formatting |
 
@@ -318,4 +406,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 2026*
+*Last updated: May 15, 2026*
