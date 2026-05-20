@@ -15,6 +15,10 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 02: JavaScript Concepts](#chapter-02-javascript-concepts)
   - [Chapter 03: Identifiers & Literals](#chapter-03-identifiers--literals)
   - [Chapter 04: JavaScript Concepts - Variables, Functions & Scope](#chapter-04-javascript-concepts---variables-functions--scope)
+  - [Chapter 05: Literals](#chapter-05-literals)
+  - [Chapter 06: Operators](#chapter-06-operators)
+  - [Chapter 07: Statements](#chapter-07-statements)
+  - [Task Live Class](#task-live-class)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
 - [Running the Code](#running-the-code)
@@ -38,7 +42,7 @@ Each chapter contains practical examples with VS Code-specific tips, keyboard sh
 ## Repository Structure
 
 ```
-LearnPlaywrightBasics2X/
+LearnPlaywright2x/
 ├── chapter_01_Basics/                          # JavaScript Basics
 │   ├── 01_Basics.js
 │   ├── 02_JS.js
@@ -65,7 +69,52 @@ LearnPlaywrightBasics2X/
 │   ├── 14_var_functionscope.js
 │   ├── 15_let_blockscope.js
 │   ├── 16_Hoisting.js
-│   └── 17_Hoisting_Functions.js
+│   ├── 17_Hoisting_Functions.js
+│   ├── 18_let_hoisting.js
+│   ├── 19_let_hoisting_block.js
+│   ├── 20_let_const_hoisting.js
+│   └── 21_jr_QA.js
+│
+├── chapter_05_Literals/                        # JavaScript Literals
+│   ├── 22_Literals.js
+│   ├── 23_null_vs_undefined.js
+│   ├── 24_Null.js
+│   ├── 25_Literals_all_type.js
+│   ├── 26_Literals_All_numbers.js
+│   ├── 27_string_Literals.js
+│   ├── 28_template_Literals.js
+│   └── 29_backtick_single_double_quote.js
+│
+├── chapter_06_Operators/                       # JavaScript Operators
+│   ├── 30_assignment_operators.js
+│   ├── 31_arithmetic_operators.js
+│   ├── 32_Modulus_operator.js
+│   ├── 33_Exponential_operators.js
+│   ├── 34_Interview_Ques.js
+│   ├── 35_comparison_operator.js
+│   ├── 36_Comparison_strict_loose.js
+│   ├── 37_comparison_interview_ques.js
+│   ├── 38_confusing_comparison.js
+│   ├── 39_Logical_operators.js
+│   ├── 40_string_concatenation.js
+│   ├── 41_Terniary operator.js
+│   ├── 42_Type_operator.js
+│   ├── 43_Increament_decreament_operators.js
+│   ├── 44_Null_operators.js
+│   ├── 45_post_increament.js
+│   └── 46_Interview_Ques_ince_decrement.js
+│
+├── chapter_07_Statements/                      # JavaScript Statements (Upcoming)
+│
+├── Task_Live_Class/                            # Live Class Tasks & Assignments
+│   ├── 01_Task_29th_April.js
+│   ├── 02_Task_04th_May.js
+│   ├── 03_Task_08th_May.js
+│   ├── 04_Task_11th_May.js
+│   ├── 05_Task_13th_May.js
+│   ├── 06_Task_15th_May.js
+│   ├── 07_Task_18th_May.js
+│   └── 08_Task_Live_20th May.js
 │
 └── README.md                                   # This file
 ```
@@ -197,6 +246,75 @@ Deep dive into JavaScript variables, functions, and scoping mechanisms:
 - `15_let_blockscope.js` - Block scope with `let`
 - `16_Hoisting.js` - Variable and function hoisting
 - `17_Hoisting_Functions.js` - Function hoisting behavior
+- `18_let_hoisting.js` - `let` hoisting behavior
+- `19_let_hoisting_block.js` - Block-level `let` hoisting
+- `20_let_const_hoisting.js` - `let` and `const` hoisting comparison
+- `21_jr_QA.js` - Junior QA interview questions and exercises
+
+---
+
+### Chapter 05: Literals
+
+**Files:** `chapter_05_Literals/`
+
+Comprehensive coverage of JavaScript literals and special values:
+- **22_Literals.js** - Introduction to literals in JavaScript
+- **23_null_vs_undefined.js** - Differences between `null` and `undefined`
+- **24_Null.js** - Deep dive into `null`
+- **25_Literals_all_type.js** - All types of literals
+- **26_Literals_All_numbers.js** - Number literals and formats
+- **27_string_Literals.js** - String literals and escaping
+- **28_template_Literals.js** - Template literals and interpolation
+- **29_backtick_single_double_quote.js** - Backticks vs quotes comparison
+
+---
+
+### Chapter 06: Operators
+
+**Files:** `chapter_06_Operators/`
+
+Complete guide to JavaScript operators with practical examples and interview questions:
+- **30_assignment_operators.js** - Assignment operators (`=`, `+=`, `-=`, etc.)
+- **31_arithmetic_operators.js** - Arithmetic operators (`+`, `-`, `*`, `/`)
+- **32_Modulus_operator.js** - Modulus (`%`) operator
+- **33_Exponential_operators.js** - Exponentiation (`**`) operator
+- **34_Interview_Ques.js** - Operator-related interview questions
+- **35_comparison_operator.js** - Comparison operators (`>`, `<`, `>=`, `<=`)
+- **36_Comparison_strict_loose.js** - Strict (`===`) vs loose (`==`) equality
+- **37_comparison_interview_ques.js** - Comparison interview questions
+- **38_confusing_comparison.js** - Tricky comparison scenarios
+- **39_Logical_operators.js** - Logical operators (`&&`, `||`, `!`)
+- **40_string_concatenation.js** - String concatenation with `+`
+- **41_Terniary operator.js** - Ternary/conditional operator
+- **42_Type_operator.js** - `typeof` and `instanceof` operators
+- **43_Increament_decreament_operators.js** - Increment and decrement operators
+- **44_Null_operators.js** - Nullish coalescing (`??`) and optional chaining
+- **45_post_increament.js** - Post-increment vs pre-increment
+- **46_Interview_Ques_ince_decrement.js** - Increment/decrement interview questions
+
+---
+
+### Chapter 07: Statements
+
+**Files:** `chapter_07_Statements/`
+
+> **Note:** This chapter is currently a placeholder for upcoming content on JavaScript statements (if/else, switch, loops, etc.).
+
+---
+
+### Task Live Class
+
+**Files:** `Task_Live_Class/`
+
+Hands-on tasks and assignments from live learning sessions:
+- **01_Task_29th_April.js** - Task from 29th April session
+- **02_Task_04th_May.js** - Task from 4th May session
+- **03_Task_08th_May.js** - Task from 8th May session
+- **04_Task_11th_May.js** - Task from 11th May session
+- **05_Task_13th_May.js** - Task from 13th May session
+- **06_Task_15th_May.js** - Task from 15th May session
+- **07_Task_18th_May.js** - Task from 18th May session
+- **08_Task_Live_20th May.js** - Task from 20th May live session
 
 ---
 
@@ -360,6 +478,55 @@ node chapter_04_Javascript_Concepts.js/14_var_functionscope.js
 node chapter_04_Javascript_Concepts.js/15_let_blockscope.js
 node chapter_04_Javascript_Concepts.js/16_Hoisting.js
 node chapter_04_Javascript_Concepts.js/17_Hoisting_Functions.js
+node chapter_04_Javascript_Concepts.js/18_let_hoisting.js
+node chapter_04_Javascript_Concepts.js/19_let_hoisting_block.js
+node chapter_04_Javascript_Concepts.js/20_let_const_hoisting.js
+node chapter_04_Javascript_Concepts.js/21_jr_QA.js
+```
+
+### Run Chapter 05 Files
+```bash
+node chapter_05_Literals/22_Literals.js
+node chapter_05_Literals/23_null_vs_undefined.js
+node chapter_05_Literals/24_Null.js
+node chapter_05_Literals/25_Literals_all_type.js
+node chapter_05_Literals/26_Literals_All_numbers.js
+node chapter_05_Literals/27_string_Literals.js
+node chapter_05_Literals/28_template_Literals.js
+node chapter_05_Literals/29_backtick_single_double_quote.js
+```
+
+### Run Chapter 06 Files
+```bash
+node chapter_06_Operators/30_assignment_operators.js
+node chapter_06_Operators/31_arithmetic_operators.js
+node chapter_06_Operators/32_Modulus_operator.js
+node chapter_06_Operators/33_Exponential_operators.js
+node chapter_06_Operators/34_Interview_Ques.js
+node chapter_06_Operators/35_comparison_operator.js
+node chapter_06_Operators/36_Comparison_strict_loose.js
+node chapter_06_Operators/37_comparison_interview_ques.js
+node chapter_06_Operators/38_confusing_comparison.js
+node chapter_06_Operators/39_Logical_operators.js
+node chapter_06_Operators/40_string_concatenation.js
+node "chapter_06_Operators/41_Terniary operator.js"
+node chapter_06_Operators/42_Type_operator.js
+node chapter_06_Operators/43_Increament_decreament_operators.js
+node chapter_06_Operators/44_Null_operators.js
+node chapter_06_Operators/45_post_increament.js
+node chapter_06_Operators/46_Interview_Ques_ince_decrement.js
+```
+
+### Run Task Live Class Files
+```bash
+node Task_Live_Class/01_Task_29th_April.js
+node Task_Live_Class/02_Task_04th_May.js
+node Task_Live_Class/03_Task_08th_May.js
+node Task_Live_Class/04_Task_11th_May.js
+node Task_Live_Class/05_Task_13th_May.js
+node Task_Live_Class/06_Task_15th_May.js
+node Task_Live_Class/07_Task_18th_May.js
+node "Task_Live_Class/08_Task_Live_20th May.js"
 ```
 
 ---
@@ -372,9 +539,12 @@ node chapter_04_Javascript_Concepts.js/17_Hoisting_Functions.js
 | **Concepts** | Scope, Hoisting, Type Coercion, Comparisons |
 | **Identifiers** | Rules, Conventions, Reserved Words |
 | **Keywords** | JavaScript keywords with examples |
-| **Literals** | String, Number, Boolean, Array, Object, Regex |
+| **Literals** | String, Number, Boolean, Array, Object, Regex, Template Literals, Null vs Undefined |
 | **Variables & Functions** | var/let/const, Function scope, Block scope, Hoisting |
 | **Hoisting & TDZ** | var/let/const hoisting, Temporal Dead Zone, Best practices |
+| **Operators** | Arithmetic, Assignment, Comparison, Logical, Ternary, Type, Nullish Coalescing |
+| **Statements** | Placeholder for upcoming content |
+| **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
 | **Best Practices** | Naming conventions, Code formatting |
 
@@ -406,4 +576,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 15, 2026*
+*Last updated: May 20, 2026*
