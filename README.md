@@ -18,6 +18,8 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 05: Literals](#chapter-05-literals)
   - [Chapter 06: Operators](#chapter-06-operators)
   - [Chapter 07: Statements](#chapter-07-statements)
+  - [Chapter 08: Switch Statement](#chapter-08-switch-statement)
+  - [Chapter 09: User Input](#chapter-09-user-input)
   - [Task Live Class](#task-live-class)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
@@ -104,7 +106,35 @@ LearnPlaywright2x/
 │   ├── 45_post_increament.js
 │   └── 46_Interview_Ques_ince_decrement.js
 │
-├── chapter_07_Statements/                      # JavaScript Statements (Upcoming)
+├── chapter_07_Statements_IF and ELSE.js/       # JavaScript If/Else Statements
+│   ├── 47_If_and_Else.js
+│   ├── 48_If_elseif_else.js
+│   ├── 49_Real_example_if_else.js
+│   ├── 50_API_real_example_if_else.js
+│   ├── 51_Interview_Ques_if_else.js
+│   ├── 52_If_else_real_example.js
+│   ├── 53_interview_Q.js
+│   ├── 54_only_if.js
+│   ├── 55_even_odd_ques.js
+│   ├── 56_grade_calculator_ques.js
+│   └── 57_Leap_Year_check_ques.js
+│
+├── chapter_08_Switch_statement/                # JavaScript Switch Statements
+│   ├── 58_switch.js
+│   ├── 59_No_break.js
+│   ├── 60_Default.js
+│   ├── 61_real_time_example.js
+│   ├── 62_switch_group.js
+│   ├── 63_interview_Ques.js
+│   ├── 64_IQ_2.js
+│   ├── 65_IQ_3.js
+│   ├── 66_IQ_4.js
+│   └── 67_IQ_5.js
+│
+├── chapter_09_user_input/                      # User Input in JavaScript
+│   ├── 68_user_input.js
+│   ├── 69_node_reading.js
+│   └── 70_prompt_sync.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -296,9 +326,49 @@ Complete guide to JavaScript operators with practical examples and interview que
 
 ### Chapter 07: Statements
 
-**Files:** `chapter_07_Statements/`
+**Files:** `chapter_07_Statements_IF and ELSE.js/`
 
-> **Note:** This chapter is currently a placeholder for upcoming content on JavaScript statements (if/else, switch, loops, etc.).
+Comprehensive coverage of JavaScript conditional statements using `if`, `else if`, and `else`:
+- **47_If_and_Else.js** - Basic if/else syntax and flow
+- **48_If_elseif_else.js** - Multiple conditions with else-if ladder
+- **49_Real_example_if_else.js** - Real-world if/else examples
+- **50_API_real_example_if_else.js** - API-related conditional examples
+- **51_Interview_Ques_if_else.js** - Interview questions on if/else
+- **52_If_else_real_example.js** - More real-life if/else scenarios
+- **53_interview_Q.js** - Additional interview questions
+- **54_only_if.js** - Using standalone `if` statements
+- **55_even_odd_ques.js** - Even/odd checker exercise
+- **56_grade_calculator_ques.js** - Grade calculator exercise
+- **57_Leap_Year_check_ques.js** - Leap year checker exercise
+
+---
+
+### Chapter 08: Switch Statement
+
+**Files:** `chapter_08_Switch_statement/`
+
+Complete guide to JavaScript `switch` statements with examples and interview questions:
+- **58_switch.js** - Introduction to switch statements
+- **59_No_break.js** - Switch cases without break (fall-through behavior)
+- **60_Default.js** - Using default cases
+- **61_real_time_example.js** - Real-world switch examples
+- **62_switch_group.js** - Grouping multiple cases
+- **63_interview_Ques.js** - Switch statement interview questions
+- **64_IQ_2.js** - Interview question set 2
+- **65_IQ_3.js** - Interview question set 3
+- **66_IQ_4.js** - Interview question set 4
+- **67_IQ_5.js** - Interview question set 5
+
+---
+
+### Chapter 09: User Input
+
+**Files:** `chapter_09_user_input/`
+
+Handling user input in JavaScript and Node.js:
+- **68_user_input.js** - Basics of capturing user input
+- **69_node_reading.js** - Reading input in Node.js
+- **70_prompt_sync.js** - Using prompt-sync for synchronous input
 
 ---
 
@@ -517,6 +587,42 @@ node chapter_06_Operators/45_post_increament.js
 node chapter_06_Operators/46_Interview_Ques_ince_decrement.js
 ```
 
+### Run Chapter 07 Files
+```bash
+node "chapter_07_Statements_IF and ELSE.js/47_If_and_Else.js"
+node "chapter_07_Statements_IF and ELSE.js/48_If_elseif_else.js"
+node "chapter_07_Statements_IF and ELSE.js/49_Real_example_if_else.js"
+node "chapter_07_Statements_IF and ELSE.js/50_API_real_example_if_else.js"
+node "chapter_07_Statements_IF and ELSE.js/51_Interview_Ques_if_else.js"
+node "chapter_07_Statements_IF and ELSE.js/52_If_else_real_example.js"
+node "chapter_07_Statements_IF and ELSE.js/53_interview_Q.js"
+node "chapter_07_Statements_IF and ELSE.js/54_only_if.js"
+node "chapter_07_Statements_IF and ELSE.js/55_even_odd_ques.js"
+node "chapter_07_Statements_IF and ELSE.js/56_grade_calculator_ques.js"
+node "chapter_07_Statements_IF and ELSE.js/57_Leap_Year_check_ques.js"
+```
+
+### Run Chapter 08 Files
+```bash
+node chapter_08_Switch_statement/58_switch.js
+node chapter_08_Switch_statement/59_No_break.js
+node chapter_08_Switch_statement/60_Default.js
+node chapter_08_Switch_statement/61_real_time_example.js
+node chapter_08_Switch_statement/62_switch_group.js
+node chapter_08_Switch_statement/63_interview_Ques.js
+node chapter_08_Switch_statement/64_IQ_2.js
+node chapter_08_Switch_statement/65_IQ_3.js
+node chapter_08_Switch_statement/66_IQ_4.js
+node chapter_08_Switch_statement/67_IQ_5.js
+```
+
+### Run Chapter 09 Files
+```bash
+node chapter_09_user_input/68_user_input.js
+node chapter_09_user_input/69_node_reading.js
+node chapter_09_user_input/70_prompt_sync.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -543,7 +649,9 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **Variables & Functions** | var/let/const, Function scope, Block scope, Hoisting |
 | **Hoisting & TDZ** | var/let/const hoisting, Temporal Dead Zone, Best practices |
 | **Operators** | Arithmetic, Assignment, Comparison, Logical, Ternary, Type, Nullish Coalescing |
-| **Statements** | Placeholder for upcoming content |
+| **If/Else Statements** | Conditional logic, real-world examples, interview questions |
+| **Switch Statements** | Switch cases, fall-through, grouping, default, interview questions |
+| **User Input** | Capturing input in Node.js, prompt-sync |
 | **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
 | **Best Practices** | Naming conventions, Code formatting |
@@ -576,4 +684,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 20, 2026*
+*Last updated: May 21, 2026*
