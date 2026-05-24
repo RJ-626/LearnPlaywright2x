@@ -20,6 +20,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 07: Statements](#chapter-07-statements)
   - [Chapter 08: Switch Statement](#chapter-08-switch-statement)
   - [Chapter 09: User Input](#chapter-09-user-input)
+  - [Chapter 10: Loops](#chapter-10-loops)
   - [Task Live Class](#task-live-class)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
@@ -135,6 +136,20 @@ LearnPlaywright2x/
 │   ├── 68_user_input.js
 │   ├── 69_node_reading.js
 │   └── 70_prompt_sync.js
+│
+├── chapter_10_Loops/                             # JavaScript Loops
+│   ├── 71_For_loop.js
+│   ├── 72_For_loop_example.js
+│   ├── 73_For_loop_example_2.js
+│   ├── 74_foor_loop_interview_ques.js
+│   ├── 75_interview_ques_2.js
+│   ├── 76_For_loop._in_off_each.js
+│   ├── 77_While_loop.js
+│   ├── 78_Do_while.js
+│   ├── 79_Do_while_example.js
+│   ├── 80_interview_ques.js
+│   ├── 81_interview_ques.js
+│   └── 82_IQ_ques.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -369,6 +384,26 @@ Handling user input in JavaScript and Node.js:
 - **68_user_input.js** - Basics of capturing user input
 - **69_node_reading.js** - Reading input in Node.js
 - **70_prompt_sync.js** - Using prompt-sync for synchronous input
+
+---
+
+### Chapter 10: Loops
+
+**Files:** `chapter_10_Loops/`
+
+Complete guide to JavaScript loops with practical examples and interview questions:
+- **71_For_loop.js** - Introduction to `for` loops
+- **72_For_loop_example.js** - `for` loop practical examples
+- **73_For_loop_example_2.js** - More `for` loop examples
+- **74_foor_loop_interview_ques.js** - `for` loop interview questions
+- **75_interview_ques_2.js** - Additional loop interview questions
+- **76_For_loop._in_off_each.js** - `for...in`, `for...of`, and `forEach` loops
+- **77_While_loop.js** - `while` loop basics
+- **78_Do_while.js** - `do...while` loop basics
+- **79_Do_while_example.js** - `do...while` practical examples
+- **80_interview_ques.js** - Loop-related interview questions
+- **81_interview_ques.js** - More loop interview questions
+- **82_IQ_ques.js** - IQ questions on loops
 
 ---
 
@@ -623,6 +658,22 @@ node chapter_09_user_input/69_node_reading.js
 node chapter_09_user_input/70_prompt_sync.js
 ```
 
+### Run Chapter 10 Files
+```bash
+node chapter_10_Loops/71_For_loop.js
+node chapter_10_Loops/72_For_loop_example.js
+node chapter_10_Loops/73_For_loop_example_2.js
+node chapter_10_Loops/74_foor_loop_interview_ques.js
+node chapter_10_Loops/75_interview_ques_2.js
+node chapter_10_Loops/76_For_loop._in_off_each.js
+node chapter_10_Loops/77_While_loop.js
+node chapter_10_Loops/78_Do_while.js
+node chapter_10_Loops/79_Do_while_example.js
+node chapter_10_Loops/80_interview_ques.js
+node chapter_10_Loops/81_interview_ques.js
+node chapter_10_Loops/82_IQ_ques.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -652,6 +703,7 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **If/Else Statements** | Conditional logic, real-world examples, interview questions |
 | **Switch Statements** | Switch cases, fall-through, grouping, default, interview questions |
 | **User Input** | Capturing input in Node.js, prompt-sync |
+| **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
 | **Best Practices** | Naming conventions, Code formatting |
@@ -684,4 +736,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 21, 2026*
+*Last updated: May 24, 2026*
