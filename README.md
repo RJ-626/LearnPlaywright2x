@@ -21,6 +21,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 08: Switch Statement](#chapter-08-switch-statement)
   - [Chapter 09: User Input](#chapter-09-user-input)
   - [Chapter 10: Loops](#chapter-10-loops)
+  - [Chapter 11: Arrays](#chapter-11-arrays)
   - [Task Live Class](#task-live-class)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
@@ -150,6 +151,17 @@ LearnPlaywright2x/
 │   ├── 80_interview_ques.js
 │   ├── 81_interview_ques.js
 │   └── 82_IQ_ques.js
+│
+├── chapter_11_Arrays/                            # JavaScript Arrays
+│   ├── 83_arrays.js
+│   ├── 84_arrays-example.js
+│   ├── 85_Arrays_create.js
+│   ├── 86_Arrays_accessing.js
+│   ├── 87_Arrays_add_remove.js
+│   ├── 88_array_real_example.js
+│   ├── 89_array_searching.js
+│   ├── 90_array_iterate.js
+│   └── 91_Arrays_transform.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -404,6 +416,23 @@ Complete guide to JavaScript loops with practical examples and interview questio
 - **80_interview_ques.js** - Loop-related interview questions
 - **81_interview_ques.js** - More loop interview questions
 - **82_IQ_ques.js** - IQ questions on loops
+
+---
+
+### Chapter 11: Arrays
+
+**Files:** `chapter_11_Arrays/`
+
+Complete guide to JavaScript arrays with practical examples:
+- **83_arrays.js** - Introduction to arrays
+- **84_arrays-example.js** - Array practical examples
+- **85_Arrays_create.js** - Creating arrays in JavaScript
+- **86_Arrays_accessing.js** - Accessing array elements
+- **87_Arrays_add_remove.js** - Adding and removing elements
+- **88_array_real_example.js** - Real-world array examples
+- **89_array_searching.js** - Searching arrays
+- **90_array_iterate.js** - Iterating over arrays
+- **91_Arrays_transform.js** - Transforming arrays
 
 ---
 
@@ -674,6 +703,19 @@ node chapter_10_Loops/81_interview_ques.js
 node chapter_10_Loops/82_IQ_ques.js
 ```
 
+### Run Chapter 11 Files
+```bash
+node chapter_11_Arrays/83_arrays.js
+node chapter_11_Arrays/84_arrays-example.js
+node chapter_11_Arrays/85_Arrays_create.js
+node chapter_11_Arrays/86_Arrays_accessing.js
+node chapter_11_Arrays/87_Arrays_add_remove.js
+node chapter_11_Arrays/88_array_real_example.js
+node chapter_11_Arrays/89_array_searching.js
+node chapter_11_Arrays/90_array_iterate.js
+node chapter_11_Arrays/91_Arrays_transform.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -703,6 +745,7 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **If/Else Statements** | Conditional logic, real-world examples, interview questions |
 | **Switch Statements** | Switch cases, fall-through, grouping, default, interview questions |
 | **User Input** | Capturing input in Node.js, prompt-sync |
+| **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
@@ -736,4 +779,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 24, 2026*
+*Last updated: May 26, 2026*
