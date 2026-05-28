@@ -22,6 +22,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 09: User Input](#chapter-09-user-input)
   - [Chapter 10: Loops](#chapter-10-loops)
   - [Chapter 11: Arrays](#chapter-11-arrays)
+  - [Chapter 12: Functions](#chapter-12-functions)
   - [Task Live Class](#task-live-class)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
@@ -161,7 +162,21 @@ LearnPlaywright2x/
 │   ├── 88_array_real_example.js
 │   ├── 89_array_searching.js
 │   ├── 90_array_iterate.js
-│   └── 91_Arrays_transform.js
+│   ├── 91_Arrays_transform.js
+│   ├── 92_arrays_sort.js
+│   ├── 93_array_slicing.js
+│   ├── 94_arrays_concat.js
+│   └── 95_arrays_checking.js
+│
+├── chapter_12_Functions/                         # JavaScript Functions
+│   ├── 96_function.js
+│   ├── 97_function_type1.js
+│   ├── 98_function_type2.js
+│   ├── 99_function_type3.js
+│   ├── 100_function_type4.js
+│   ├── 101_functionwithtemperalliteral.js
+│   ├── 102_function_expression.js
+│   └── 103_arrow_function.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -433,6 +448,26 @@ Complete guide to JavaScript arrays with practical examples:
 - **89_array_searching.js** - Searching arrays
 - **90_array_iterate.js** - Iterating over arrays
 - **91_Arrays_transform.js** - Transforming arrays
+- **92_arrays_sort.js** - Sorting arrays (including compare functions)
+- **93_array_slicing.js** - Array slicing (`slice`) vs splicing (`splice`)
+- **94_arrays_concat.js** - Concatenating arrays and `join()` method
+- **95_arrays_checking.js** - Checking arrays with `Array.isArray`, `every`, and `some`
+
+---
+
+### Chapter 12: Functions
+
+**Files:** `chapter_12_Functions/`
+
+Complete guide to JavaScript functions, from basic declarations to arrow functions:
+- **96_function.js** - Function declarations, expressions, and methods
+- **97_function_type1.js** - No parameter, no return type functions
+- **98_function_type2.js** - Parameter but no return type functions
+- **99_function_type3.js** - No parameter but return type functions
+- **100_function_type4.js** - Both parameter and return type functions
+- **101_functionwithtemperalliteral.js** - Functions with template literals
+- **102_function_expression.js** - Function expressions overview
+- **103_arrow_function.js** - Arrow functions and shorthand syntax
 
 ---
 
@@ -714,6 +749,22 @@ node chapter_11_Arrays/88_array_real_example.js
 node chapter_11_Arrays/89_array_searching.js
 node chapter_11_Arrays/90_array_iterate.js
 node chapter_11_Arrays/91_Arrays_transform.js
+node chapter_11_Arrays/92_arrays_sort.js
+node chapter_11_Arrays/93_array_slicing.js
+node chapter_11_Arrays/94_arrays_concat.js
+node chapter_11_Arrays/95_arrays_checking.js
+```
+
+### Run Chapter 12 Files
+```bash
+node chapter_12_Functions/96_function.js
+node chapter_12_Functions/97_function_type1.js
+node chapter_12_Functions/98_function_type2.js
+node chapter_12_Functions/99_function_type3.js
+node chapter_12_Functions/100_function_type4.js
+node chapter_12_Functions/101_functionwithtemperalliteral.js
+node chapter_12_Functions/102_function_expression.js
+node chapter_12_Functions/103_arrow_function.js
 ```
 
 ### Run Task Live Class Files
@@ -745,7 +796,8 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **If/Else Statements** | Conditional logic, real-world examples, interview questions |
 | **Switch Statements** | Switch cases, fall-through, grouping, default, interview questions |
 | **User Input** | Capturing input in Node.js, prompt-sync |
-| **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming |
+| **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming, sorting, slicing, concatenating |
+| **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
@@ -779,4 +831,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 26, 2026*
+*Last updated: May 28, 2026*
