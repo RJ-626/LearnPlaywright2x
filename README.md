@@ -176,7 +176,21 @@ LearnPlaywright2x/
 │   ├── 100_function_type4.js
 │   ├── 101_functionwithtemperalliteral.js
 │   ├── 102_function_expression.js
-│   └── 103_arrow_function.js
+│   ├── 103_arrow_function.js
+│   ├── 104_arrow_fn_real_example.js
+│   ├── 105_IIFE.js
+│   ├── 106_Default_param_fn.js
+│   ├── 107_IQ.js
+│   ├── 108_Rest_param_fn.js
+│   ├── 109_Interview_Q.js
+│   ├── 110_spread_IQ.js
+│   ├── 111_Scope_IO.js
+│   ├── 112_IQ.js
+│   ├── 113_closure.js
+│   ├── 114_closure_example.js
+│   ├── 115_API_real_ex_closure.js
+│   ├── 116_higher_order_fn.js
+│   └── 117_Pure_function.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -459,7 +473,7 @@ Complete guide to JavaScript arrays with practical examples:
 
 **Files:** `chapter_12_Functions/`
 
-Complete guide to JavaScript functions, from basic declarations to arrow functions:
+Complete guide to JavaScript functions, from basic declarations to advanced concepts:
 - **96_function.js** - Function declarations, expressions, and methods
 - **97_function_type1.js** - No parameter, no return type functions
 - **98_function_type2.js** - Parameter but no return type functions
@@ -468,6 +482,20 @@ Complete guide to JavaScript functions, from basic declarations to arrow functio
 - **101_functionwithtemperalliteral.js** - Functions with template literals
 - **102_function_expression.js** - Function expressions overview
 - **103_arrow_function.js** - Arrow functions and shorthand syntax
+- **104_arrow_fn_real_example.js** - Real-world arrow function examples
+- **105_IIFE.js** - Immediately Invoked Function Expressions (IIFE)
+- **106_Default_param_fn.js** - Default parameters in functions
+- **107_IQ.js** - Function interview questions set 1
+- **108_Rest_param_fn.js** - Rest parameters in functions
+- **109_Interview_Q.js** - Function interview questions set 2
+- **110_spread_IQ.js** - Spread operator interview questions
+- **111_Scope_IO.js** - Scope-related interview questions
+- **112_IQ.js** - Function interview questions set 3
+- **113_closure.js** - Closures in JavaScript
+- **114_closure_example.js** - Closure practical examples
+- **115_API_real_ex_closure.js** - Real-world API examples using closures
+- **116_higher_order_fn.js** - Higher-order functions
+- **117_Pure_function.js** - Pure vs impure functions
 
 ---
 
@@ -765,6 +793,20 @@ node chapter_12_Functions/100_function_type4.js
 node chapter_12_Functions/101_functionwithtemperalliteral.js
 node chapter_12_Functions/102_function_expression.js
 node chapter_12_Functions/103_arrow_function.js
+node chapter_12_Functions/104_arrow_fn_real_example.js
+node chapter_12_Functions/105_IIFE.js
+node chapter_12_Functions/106_Default_param_fn.js
+node chapter_12_Functions/107_IQ.js
+node chapter_12_Functions/108_Rest_param_fn.js
+node chapter_12_Functions/109_Interview_Q.js
+node chapter_12_Functions/110_spread_IQ.js
+node chapter_12_Functions/111_Scope_IO.js
+node chapter_12_Functions/112_IQ.js
+node chapter_12_Functions/113_closure.js
+node chapter_12_Functions/114_closure_example.js
+node chapter_12_Functions/115_API_real_ex_closure.js
+node chapter_12_Functions/116_higher_order_fn.js
+node chapter_12_Functions/117_Pure_function.js
 ```
 
 ### Run Task Live Class Files
@@ -797,7 +839,7 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **Switch Statements** | Switch cases, fall-through, grouping, default, interview questions |
 | **User Input** | Capturing input in Node.js, prompt-sync |
 | **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming, sorting, slicing, concatenating |
-| **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals |
+| **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals, IIFE, default/rest parameters, closures, higher-order functions, pure functions |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
@@ -831,4 +873,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: May 28, 2026*
+*Last updated: June 02, 2026*
