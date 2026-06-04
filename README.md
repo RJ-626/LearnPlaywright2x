@@ -23,6 +23,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 10: Loops](#chapter-10-loops)
   - [Chapter 11: Arrays](#chapter-11-arrays)
   - [Chapter 12: Functions](#chapter-12-functions)
+  - [Chapter 13: Strings](#chapter-13-strings)
   - [Task Live Class](#task-live-class)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
@@ -191,6 +192,15 @@ LearnPlaywright2x/
 │   ├── 115_API_real_ex_closure.js
 │   ├── 116_higher_order_fn.js
 │   └── 117_Pure_function.js
+│
+├── chapter_13_strings/                           # JavaScript Strings
+│   ├── 118_strings.js
+│   ├── 119_string_properties.js
+│   ├── 120_strings_search.js
+│   ├── 121_substring.js
+│   ├── 122_String_Transform.js
+│   ├── 123_String_conversion.js
+│   └── javascript_string_cheatsheet.md
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -496,6 +506,21 @@ Complete guide to JavaScript functions, from basic declarations to advanced conc
 - **115_API_real_ex_closure.js** - Real-world API examples using closures
 - **116_higher_order_fn.js** - Higher-order functions
 - **117_Pure_function.js** - Pure vs impure functions
+
+---
+
+### Chapter 13: Strings
+
+**Files:** `chapter_13_strings/`
+
+Complete guide to JavaScript strings with practical examples and a comprehensive cheat sheet:
+- **118_strings.js** - Introduction to strings: single quotes, double quotes, backticks, multiline strings, and String() constructor
+- **119_string_properties.js** - String properties and methods: length, charAt, toUpperCase, toLowerCase, indexOf, lastIndexOf, includes, startsWith, endsWith, slice, substring, split, trim, replace, repeat, at, codePointAt, normalize
+- **120_strings_search.js** - Searching strings: indexOf, lastIndexOf, includes, startsWith, endsWith with real-world URL examples
+- **121_substring.js** - Extracting substrings: substring(), slice(), differences between substring and slice with negative indices
+- **122_String_Transform.js** - Transforming strings: trim, trimStart, trimEnd, toUpperCase, toLowerCase, replace, replaceAll, concatenation with + and template literals
+- **123_String_conversion.js** - String conversion: String(), toString(), Number(), parseInt(), parseFloat()
+- **javascript_string_cheatsheet.md** - Comprehensive cheat sheet with all JavaScript string methods in table format
 
 ---
 
@@ -809,6 +834,16 @@ node chapter_12_Functions/116_higher_order_fn.js
 node chapter_12_Functions/117_Pure_function.js
 ```
 
+### Run Chapter 13 Files
+```bash
+node chapter_13_strings/118_strings.js
+node chapter_13_strings/119_string_properties.js
+node chapter_13_strings/120_strings_search.js
+node chapter_13_strings/121_substring.js
+node chapter_13_strings/122_String_Transform.js
+node chapter_13_strings/123_String_conversion.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -840,6 +875,7 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **User Input** | Capturing input in Node.js, prompt-sync |
 | **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming, sorting, slicing, concatenating |
 | **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals, IIFE, default/rest parameters, closures, higher-order functions, pure functions |
+| **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
@@ -873,4 +909,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 02, 2026*
+*Last updated: June 04, 2026*
