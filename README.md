@@ -24,7 +24,9 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 11: Arrays](#chapter-11-arrays)
   - [Chapter 12: Functions](#chapter-12-functions)
   - [Chapter 13: Strings](#chapter-13-strings)
+  - [Chapter 14: Objects](#chapter-14-objects)
   - [Task Live Class](#task-live-class)
+  - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
 - [VS Code Tips](#vs-code-tips)
 - [Running the Code](#running-the-code)
@@ -202,6 +204,22 @@ LearnPlaywright2x/
 │   ├── 123_String_conversion.js
 │   └── javascript_string_cheatsheet.md
 │
+├── chapter_14_objects/                         # JavaScript Objects
+│   ├── 124_objects.js
+│   ├── 125_objects_example.js
+│   ├── 126_obj_creation.js
+│   ├── 127_obj_real_example.js
+│   ├── 128_obj_premitivevsREfrence.js
+│   ├── 129_obj_example.js
+│   ├── 130_Interview_Ques.js
+│   ├── 131_obj_with_functions.js
+│   ├── 132_object_deconstruction.js
+│   ├── 133_obj.spread.js
+│   ├── 134_obj_get_set_method.js
+│   ├── 135_Interview_Ques.js
+│   ├── 136_obj_real.js
+│   └── 137_const_vs_let.js
+│
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
 │   ├── 02_Task_04th_May.js
@@ -211,6 +229,8 @@ LearnPlaywright2x/
 │   ├── 06_Task_15th_May.js
 │   ├── 07_Task_18th_May.js
 │   └── 08_Task_Live_20th May.js
+│
+├── interview.md                                # JavaScript Interview Questions & Concepts
 │
 └── README.md                                   # This file
 ```
@@ -524,6 +544,28 @@ Complete guide to JavaScript strings with practical examples and a comprehensive
 
 ---
 
+### Chapter 14: Objects
+
+**Files:** `chapter_14_objects/`
+
+Complete guide to JavaScript objects, covering creation, manipulation, and interview questions:
+- **124_objects.js** - Introduction to objects and object literals
+- **125_objects_example.js** - Object practical examples
+- **126_obj_creation.js** - Creating objects in JavaScript
+- **127_obj_real_example.js** - Real-world object examples
+- **128_obj_premitivevsREfrence.js** - Primitive vs reference types with objects
+- **129_obj_example.js** - Additional object examples
+- **130_Interview_Ques.js** - Object-related interview questions set 1
+- **131_obj_with_functions.js** - Objects with functions (methods)
+- **132_object_deconstruction.js** - Object destructuring
+- **133_obj.spread.js** - Spread operator with objects
+- **134_obj_get_set_method.js** - Getter and setter methods in objects
+- **135_Interview_Ques.js** - Object-related interview questions set 2
+- **136_obj_real.js** - Real-world object patterns
+- **137_const_vs_let.js** - `const` vs `let` with objects and why `const` is preferred
+
+---
+
 ### Task Live Class
 
 **Files:** `Task_Live_Class/`
@@ -537,6 +579,18 @@ Hands-on tasks and assignments from live learning sessions:
 - **06_Task_15th_May.js** - Task from 15th May session
 - **07_Task_18th_May.js** - Task from 18th May session
 - **08_Task_Live_20th May.js** - Task from 20th May live session
+
+---
+
+### Interview Questions
+
+**File:** `interview.md`
+
+A dedicated reference covering commonly asked JavaScript interview questions and concepts, including:
+- Why `const` is preferred when declaring objects in JavaScript
+- Variable binding vs object property mutation
+- `Object.freeze()` and true immutability
+- Best practices for `const`, `let`, and `var`
 
 ---
 
@@ -844,6 +898,24 @@ node chapter_13_strings/122_String_Transform.js
 node chapter_13_strings/123_String_conversion.js
 ```
 
+### Run Chapter 14 Files
+```bash
+node chapter_14_objects/124_objects.js
+node chapter_14_objects/125_objects_example.js
+node chapter_14_objects/126_obj_creation.js
+node chapter_14_objects/127_obj_real_example.js
+node chapter_14_objects/128_obj_premitivevsREfrence.js
+node chapter_14_objects/129_obj_example.js
+node chapter_14_objects/130_Interview_Ques.js
+node chapter_14_objects/131_obj_with_functions.js
+node chapter_14_objects/132_object_deconstruction.js
+node chapter_14_objects/133_obj.spread.js
+node chapter_14_objects/134_obj_get_set_method.js
+node chapter_14_objects/135_Interview_Ques.js
+node chapter_14_objects/136_obj_real.js
+node chapter_14_objects/137_const_vs_let.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -875,9 +947,11 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **User Input** | Capturing input in Node.js, prompt-sync |
 | **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming, sorting, slicing, concatenating |
 | **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals, IIFE, default/rest parameters, closures, higher-order functions, pure functions |
+| **Objects** | Object literals, creation, primitive vs reference, destructuring, spread, getters/setters, methods, real-world patterns, `const` vs `let` |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
+| **Interview Questions** | JavaScript interview Q&A reference |
 | **VS Code** | Shortcuts, Debugging, IntelliSense, Snippets |
 | **Best Practices** | Naming conventions, Code formatting |
 
@@ -909,4 +983,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 04, 2026*
+*Last updated: June 07, 2026*
