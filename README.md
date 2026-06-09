@@ -25,6 +25,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 12: Functions](#chapter-12-functions)
   - [Chapter 13: Strings](#chapter-13-strings)
   - [Chapter 14: Objects](#chapter-14-objects)
+  - [Chapter 15: 2D Arrays](#chapter-15-2d-arrays)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -219,6 +220,13 @@ LearnPlaywright2x/
 │   ├── 135_Interview_Ques.js
 │   ├── 136_obj_real.js
 │   └── 137_const_vs_let.js
+│
+├── chapter_15_2D_array/                        # JavaScript 2D Arrays
+│   ├── 138_2D_array.js
+│   ├── 139_2d_array_example.js
+│   ├── 140_2D_array_real_example.js
+│   ├── 141_2D_array_function.js
+│   └── 142_IQ_right_pyramid_pattern.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -566,6 +574,19 @@ Complete guide to JavaScript objects, covering creation, manipulation, and inter
 
 ---
 
+### Chapter 15: 2D Arrays
+
+**Files:** `chapter_15_2D_array/`
+
+Complete guide to JavaScript 2D arrays with practical examples and pattern problems:
+- **138_2D_array.js** - Introduction to 2D arrays
+- **139_2d_array_example.js** - 2D array practical examples
+- **140_2D_array_real_example.js** - Real-world 2D array examples
+- **141_2D_array_function.js** - Functions with 2D arrays
+- **142_IQ_right_pyramid_pattern.js** - Right pyramid pattern using 2D arrays (interview question)
+
+---
+
 ### Task Live Class
 
 **Files:** `Task_Live_Class/`
@@ -579,6 +600,10 @@ Hands-on tasks and assignments from live learning sessions:
 - **06_Task_15th_May.js** - Task from 15th May session
 - **07_Task_18th_May.js** - Task from 18th May session
 - **08_Task_Live_20th May.js** - Task from 20th May live session
+- **09_Task_20th_May.js** - Task from 20th May session
+- **10_Task_22th_May.js** - Task from 22nd May session
+- **11_Task_03rd_June.js** - Task from 3rd June session
+- **12_Task_08th_June.js** - Task from 8th June session
 
 ---
 
@@ -916,6 +941,15 @@ node chapter_14_objects/136_obj_real.js
 node chapter_14_objects/137_const_vs_let.js
 ```
 
+### Run Chapter 15 Files
+```bash
+node chapter_15_2D_array/138_2D_array.js
+node chapter_15_2D_array/139_2d_array_example.js
+node chapter_15_2D_array/140_2D_array_real_example.js
+node chapter_15_2D_array/141_2D_array_function.js
+node chapter_15_2D_array/142_IQ_right_pyramid_pattern.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -926,6 +960,10 @@ node Task_Live_Class/05_Task_13th_May.js
 node Task_Live_Class/06_Task_15th_May.js
 node Task_Live_Class/07_Task_18th_May.js
 node "Task_Live_Class/08_Task_Live_20th May.js"
+node Task_Live_Class/09_Task_20th_May.js
+node Task_Live_Class/10_Task_22th_May.js
+node Task_Live_Class/11_Task_03rd_June.js
+node Task_Live_Class/12_Task_08th_June.js
 ```
 
 ---
@@ -948,6 +986,7 @@ node "Task_Live_Class/08_Task_Live_20th May.js"
 | **Arrays** | Creating, accessing, adding/removing, searching, iterating, transforming, sorting, slicing, concatenating |
 | **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals, IIFE, default/rest parameters, closures, higher-order functions, pure functions |
 | **Objects** | Object literals, creation, primitive vs reference, destructuring, spread, getters/setters, methods, real-world patterns, `const` vs `let` |
+| **2D Arrays** | Introduction, examples, real-world usage, functions with 2D arrays, pattern problems (right pyramid) |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -983,4 +1022,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 07, 2026*
+*Last updated: June 09, 2026*
