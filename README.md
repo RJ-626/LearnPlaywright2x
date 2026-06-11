@@ -26,6 +26,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 13: Strings](#chapter-13-strings)
   - [Chapter 14: Objects](#chapter-14-objects)
   - [Chapter 15: 2D Arrays](#chapter-15-2d-arrays)
+  - [Chapter 16: Callbacks](#chapter-16-callbacks)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -227,6 +228,10 @@ LearnPlaywright2x/
 │   ├── 140_2D_array_real_example.js
 │   ├── 141_2D_array_function.js
 │   └── 142_IQ_right_pyramid_pattern.js
+│
+├── chapter_16_callback/                        # Callbacks & Callback Hell
+│   ├── 150_callback_hell.js
+│   └── 151_callback_hell_of_DOM.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -584,6 +589,22 @@ Complete guide to JavaScript 2D arrays with practical examples and pattern probl
 - **140_2D_array_real_example.js** - Real-world 2D array examples
 - **141_2D_array_function.js** - Functions with 2D arrays
 - **142_IQ_right_pyramid_pattern.js** - Right pyramid pattern using 2D arrays (interview question)
+
+---
+
+### Chapter 16: Callbacks
+
+**Files:** `chapter_16_callback/`
+
+Understanding callbacks and the callback hell anti-pattern in JavaScript and Playwright DOM automation:
+- **150_callback_hell.js** - Real QA scenario demonstrating callback hell with nested login flow (open browser → login page → enter credentials → click login)
+- **151_callback_hell_of_DOM.js** - Playwright test demonstrating callback hell with 23+ nested DOM operations (page navigation, form interactions, profile editing, checkbox handling, logout)
+
+**Key Concepts:**
+- Callback functions and asynchronous execution
+- The pyramid of doom / callback hell anti-pattern
+- Why nested callbacks make code hard to read and maintain
+- Foundation for understanding Promises and async/await
 
 ---
 
@@ -950,6 +971,12 @@ node chapter_15_2D_array/141_2D_array_function.js
 node chapter_15_2D_array/142_IQ_right_pyramid_pattern.js
 ```
 
+### Run Chapter 16 Files
+```bash
+node chapter_16_callback/150_callback_hell.js
+node chapter_16_callback/151_callback_hell_of_DOM.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -987,6 +1014,7 @@ node Task_Live_Class/12_Task_08th_June.js
 | **Functions** | Declarations, expressions, arrow functions, parameters, return types, template literals, IIFE, default/rest parameters, closures, higher-order functions, pure functions |
 | **Objects** | Object literals, creation, primitive vs reference, destructuring, spread, getters/setters, methods, real-world patterns, `const` vs `let` |
 | **2D Arrays** | Introduction, examples, real-world usage, functions with 2D arrays, pattern problems (right pyramid) |
+| **Callbacks** | Callback functions, callback hell, pyramid of doom, Playwright DOM automation with callbacks |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1022,4 +1050,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 09, 2026*
+*Last updated: June 11, 2026*
