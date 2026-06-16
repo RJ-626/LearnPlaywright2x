@@ -27,6 +27,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 14: Objects](#chapter-14-objects)
   - [Chapter 15: 2D Arrays](#chapter-15-2d-arrays)
   - [Chapter 16: Callbacks](#chapter-16-callbacks)
+  - [Chapter 17: Promises](#chapter-17-promises)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -608,6 +609,28 @@ Understanding callbacks and the callback hell anti-pattern in JavaScript and Pla
 
 ---
 
+### Chapter 17: Promises
+
+**Files:** `chapter_17_Promise/`
+
+Complete guide to JavaScript Promises, from basic creation to real-world API patterns and promise chaining:
+- **154_promise.js** - Introduction to Promises: creating a Promise with `resolve` and `reject`, handling success and failure
+- **155_Promise_real_example_API.js** - Real-world API example using `.then()` to handle resolved Promise responses
+- **156_promise_real_example_API_2.js** - Handling rejected Promises with `.catch()`, understanding when `.then()` is skipped
+- **157_finally.js** - Using `.finally()` for cleanup that executes regardless of resolve or reject
+- **158_callback_pyramid_problem.js** - Solving the callback pyramid problem with Promise chaining (browser automation flow: open → login → credentials → click)
+- **159_promise.all.js** - `Promise.all()` and `Promise.allSettled()` for parallel promise execution with success and failure scenarios
+- **160_IQ.js** - Promise interview questions and tricky scenarios: chaining, error handling, `Promise.resolve()`, `Promise.reject()`, and `Promise.all()` behavior
+
+**Key Concepts:**
+- Promise states: pending, fulfilled, rejected
+- `.then()`, `.catch()`, and `.finally()` methods
+- Promise chaining to avoid callback hell
+- `Promise.all()` vs `Promise.allSettled()`
+- Error propagation in promise chains
+
+---
+
 ### Task Live Class
 
 **Files:** `Task_Live_Class/`
@@ -977,6 +1000,17 @@ node chapter_16_callback/150_callback_hell.js
 node chapter_16_callback/151_callback_hell_of_DOM.js
 ```
 
+### Run Chapter 17 Files
+```bash
+node chapter_17_Promise/154_promise.js
+node chapter_17_Promise/155_Promise_real_example_API.js
+node chapter_17_Promise/156_promise_real_example_API_2.js
+node chapter_17_Promise/157_finally.js
+node chapter_17_Promise/158_callback_pyramid_problem.js
+node chapter_17_Promise/159_promise.all.js
+node chapter_17_Promise/160_IQ.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -1015,6 +1049,7 @@ node Task_Live_Class/12_Task_08th_June.js
 | **Objects** | Object literals, creation, primitive vs reference, destructuring, spread, getters/setters, methods, real-world patterns, `const` vs `let` |
 | **2D Arrays** | Introduction, examples, real-world usage, functions with 2D arrays, pattern problems (right pyramid) |
 | **Callbacks** | Callback functions, callback hell, pyramid of doom, Playwright DOM automation with callbacks |
+| **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1050,4 +1085,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 11, 2026*
+*Last updated: June 16, 2026*
