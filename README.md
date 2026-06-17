@@ -28,6 +28,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 15: 2D Arrays](#chapter-15-2d-arrays)
   - [Chapter 16: Callbacks](#chapter-16-callbacks)
   - [Chapter 17: Promises](#chapter-17-promises)
+  - [Chapter 18: Async/Await](#chapter-18-asyncawait)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -233,6 +234,24 @@ LearnPlaywright2x/
 ├── chapter_16_callback/                        # Callbacks & Callback Hell
 │   ├── 150_callback_hell.js
 │   └── 151_callback_hell_of_DOM.js
+│
+├── chapter_17_Promise/                           # JavaScript Promises
+│   ├── 154_promise.js
+│   ├── 155_Promise_real_example_API.js
+│   ├── 156_promise_real_example_API_2.js
+│   ├── 157_finally.js
+│   ├── 158_callback_pyramid_problem.js
+│   ├── 159_promise.all.js
+│   └── 160_IQ.js
+│
+├── chapter_18_Async_Await.js/                    # Async/Await
+│   ├── 161_Async.js
+│   ├── 162_Async.example.js
+│   ├── 163_PyofDOM.js
+│   ├── 164_Async_Await.js
+│   ├── 165_Async_Await_seq.js
+│   ├── 166_Async_Await_parallel.js
+│   └── 167_IQ.js
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -631,6 +650,29 @@ Complete guide to JavaScript Promises, from basic creation to real-world API pat
 
 ---
 
+### Chapter 18: Async/Await
+
+**Files:** `chapter_18_Async_Await.js/`
+
+Complete guide to JavaScript `async/await`, from basic syntax to sequential vs parallel execution and real-world automation patterns:
+- **161_Async.js** - Introduction to `async` functions: handling `Promise.reject()` with `try...catch...finally`
+- **162_Async.example.js** - Real-world example: awaiting a `Promise.resolve()` token, understanding when to use `await`
+- **163_PyofDOM.js** - Solving callback pyramid of doom with `async/await`: browser automation flow (open browser → login page → credentials → click login)
+- **164_Async_Await.js** - Understanding how `async` functions return a Promise and can be chained with `.then()`
+- **165_Async_Await_seq.js** - Sequential execution with `async/await`: running dependent API calls (login → dashboard → report) and measuring total execution time
+- **166_Async_Await_parallel.js** - Parallel execution with `async/await` + `Promise.all()`: running independent API calls simultaneously (Auth, User creation, Support Page)
+- **167_IQ.js** - Async/await interview questions and hands-on scenarios: returning values from async functions, awaiting resolved Promises, and test flow automation
+
+**Key Concepts:**
+- `async` function declarations and implicit Promise returns
+- `await` keyword for pausing execution until a Promise settles
+- `try...catch...finally` for error handling in async code
+- Sequential vs parallel async execution patterns
+- Using `Promise.all()` inside async functions for parallelism
+- Solving callback hell with readable async/await syntax
+
+---
+
 ### Task Live Class
 
 **Files:** `Task_Live_Class/`
@@ -1011,6 +1053,17 @@ node chapter_17_Promise/159_promise.all.js
 node chapter_17_Promise/160_IQ.js
 ```
 
+### Run Chapter 18 Files
+```bash
+node chapter_18_Async_Await.js/161_Async.js
+node chapter_18_Async_Await.js/162_Async.example.js
+node chapter_18_Async_Await.js/163_PyofDOM.js
+node chapter_18_Async_Await.js/164_Async_Await.js
+node chapter_18_Async_Await.js/165_Async_Await_seq.js
+node chapter_18_Async_Await.js/166_Async_Await_parallel.js
+node chapter_18_Async_Await.js/167_IQ.js
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -1050,6 +1103,7 @@ node Task_Live_Class/12_Task_08th_June.js
 | **2D Arrays** | Introduction, examples, real-world usage, functions with 2D arrays, pattern problems (right pyramid) |
 | **Callbacks** | Callback functions, callback hell, pyramid of doom, Playwright DOM automation with callbacks |
 | **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
+| **Async/Await** | `async` functions, `await` keyword, `try...catch...finally`, sequential vs parallel execution, solving callback hell |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1085,4 +1139,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 16, 2026*
+*Last updated: June 17, 2026*
