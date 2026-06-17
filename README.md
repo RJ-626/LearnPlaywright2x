@@ -254,6 +254,11 @@ LearnPlaywright2x/
 │   ├── 166_Async_Await_parallel.js
 │   └── 167_IQ.js
 │
+├── chapter_19_Playwright_Basics/              # Introduction to Playwright Basics
+│   ├── package.json                            # Playwright project configuration
+│   ├── package-lock.json                       # Dependency lock file
+│   └── sdetlivepdf                             # Playwright learning resource / reference PDF
+│
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
 │   ├── 02_Task_04th_May.js
@@ -262,7 +267,11 @@ LearnPlaywright2x/
 │   ├── 05_Task_13th_May.js
 │   ├── 06_Task_15th_May.js
 │   ├── 07_Task_18th_May.js
-│   └── 08_Task_Live_20th May.js
+│   ├── 08_Task_Live_20th May.js
+│   ├── 09_Task_20th_May.js
+│   ├── 10_Task_22th_May.js
+│   ├── 11_Task_03rd_June.js
+│   └── 12_Task_08th_June.js
 │
 ├── interview.md                                # JavaScript Interview Questions & Concepts
 │
@@ -680,11 +689,14 @@ Complete guide to JavaScript `async/await`, from basic syntax to sequential vs p
 
 Introduction to Playwright test automation framework:
 - **package.json** - Project setup with Playwright dependency (`playwright: ^1.61.0`)
+- **package-lock.json** - Lock file ensuring consistent dependency versions across installs
+- **sdetlivepdf** - Playwright learning resource and reference PDF for SDET live sessions
 
 **Key Concepts:**
 - Playwright installation and project setup
 - Foundation for browser automation testing
 - Pre-requisite for advanced Playwright chapters
+- Dependency management with npm (`package.json` and `package-lock.json`)
 
 ---
 
@@ -1161,4 +1173,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 17, 2026*
+*Last updated: June 17, 2026 — Added Chapter 19 Playwright Basics resources (package-lock.json, sdetlivepdf) and updated Task Live Class files*
