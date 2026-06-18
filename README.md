@@ -30,6 +30,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 17: Promises](#chapter-17-promises)
   - [Chapter 18: Async/Await](#chapter-18-asyncawait)
   - [Chapter 19: Playwright Basics](#chapter-19-playwright-basics)
+  - [Chapter 20: Advanced Playwright](#chapter-20-advanced-playwright)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -255,9 +256,14 @@ LearnPlaywright2x/
 │   └── 167_IQ.js
 │
 ├── chapter_19_Playwright_Basics/              # Introduction to Playwright Basics
+│   ├── .gitignore                              # Playwright ignore patterns
 │   ├── package.json                            # Playwright project configuration
 │   ├── package-lock.json                       # Dependency lock file
-│   └── sdetlivepdf                             # Playwright learning resource / reference PDF
+│   ├── playwright.config.ts                    # Playwright test configuration
+│   ├── sdetlivepdf                             # Playwright learning resource / reference PDF
+│   └── tests/                                  # Playwright test files
+│       ├── Codegen_TTA_Card.spec.ts            # Generated TTACart login test
+│       └── example.spec.ts                     # Sample Playwright test
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -688,15 +694,41 @@ Complete guide to JavaScript `async/await`, from basic syntax to sequential vs p
 **Files:** `chapter_19_Playwright_Basics/`
 
 Introduction to Playwright test automation framework:
-- **package.json** - Project setup with Playwright dependency (`playwright: ^1.61.0`)
+- **.gitignore** - Playwright ignore patterns (node_modules, test-results, playwright-report, blob-report, cache, auth)
+- **package.json** - Project setup with Playwright dependency (`playwright: ^1.61.0`) and devDependencies (`@playwright/test`, `@types/node`)
 - **package-lock.json** - Lock file ensuring consistent dependency versions across installs
+- **playwright.config.ts** - Playwright test configuration for multi-browser testing (Chromium, Firefox, WebKit)
 - **sdetlivepdf** - Playwright learning resource and reference PDF for SDET live sessions
+- **tests/example.spec.ts** - Sample Playwright test verifying TTACart page title
+- **tests/Codegen_TTA_Card.spec.ts** - Playwright codegen-generated test for TTACart login flow
 
 **Key Concepts:**
 - Playwright installation and project setup
 - Foundation for browser automation testing
 - Pre-requisite for advanced Playwright chapters
 - Dependency management with npm (`package.json` and `package-lock.json`)
+- Playwright test runner (`@playwright/test`)
+- Codegen for automated test generation
+- Multi-browser testing (Chromium, Firefox, WebKit)
+- Test fixtures (`page`, `expect`)
+
+---
+
+### Chapter 20: Advanced Playwright
+
+**Files:** `chapter_20_Advanced_Playwright/`
+
+Advanced concepts in Playwright test automation:
+- **168_intro.js** - Introduction to advanced Playwright topics
+
+**Key Concepts:**
+- Advanced Playwright patterns and best practices
+- Page Object Model (POM) fundamentals
+- Custom fixtures and test extensions
+- API testing with Playwright
+- Advanced selectors and locators
+- Handling complex user interactions
+- Test reporting and CI/CD integration
 
 ---
 
@@ -1095,6 +1127,18 @@ node chapter_18_Async_Await/167_IQ.js
 ```bash
 cd chapter_19_Playwright_Basics
 npm install
+npx playwright test
+```
+
+### Run Chapter 19 Tests (Headed)
+```bash
+cd chapter_19_Playwright_Basics
+npx playwright test --headed
+```
+
+### Run Chapter 20 Files
+```bash
+node chapter_20_Advanced_Playwright/168_intro.js
 ```
 
 ### Run Task Live Class Files
@@ -1138,6 +1182,7 @@ node Task_Live_Class/12_Task_08th_June.js
 | **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
 | **Async/Await** | `async` functions, `await` keyword, `try...catch...finally`, sequential vs parallel execution, solving callback hell |
 | **Playwright Basics** | Playwright installation, project setup, browser automation foundation |
+| **Advanced Playwright** | Advanced patterns, POM, fixtures, API testing, complex interactions, CI/CD |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1173,4 +1218,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 17, 2026 — Added Chapter 19 Playwright Basics resources (package-lock.json, sdetlivepdf) and updated Task Live Class files*
+*Last updated: June 18, 2026 — Added Chapter 20: Advanced Playwright with placeholder content*
