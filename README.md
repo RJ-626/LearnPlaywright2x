@@ -265,6 +265,16 @@ LearnPlaywright2x/
 │       ├── Codegen_TTA_Card.spec.ts            # Generated TTACart login test
 │       └── example.spec.ts                     # Sample Playwright test
 │
+├── chapter_20_TypeScript_Basics/              # TypeScript Basics - Export/Import
+│   ├── EXPORT_IMPORT/                          # Export and Import examples
+│   │   ├── 168_EXPORT_IMPORT.js                # Introduction to export/import
+│   │   ├── 169_Utils.js                        # Named import example
+│   │   ├── 170_Loggers.js                      # Default import example
+│   │   └── Explaindefault.md                   # Default vs named exports guide
+│   ├── utils.js                                # Named exports utility
+│   ├── testutils.js                            # Named exports test utility
+│   └── logger.js                               # Default export logger
+│
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
 │   ├── 02_Task_04th_May.js
