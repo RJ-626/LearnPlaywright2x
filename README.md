@@ -277,7 +277,8 @@ LearnPlaywright2x/
 │   ├── 09_Task_20th_May.js
 │   ├── 10_Task_22th_May.js
 │   ├── 11_Task_03rd_June.js
-│   └── 12_Task_08th_June.js
+│   ├── 12_Task_08th_June.js
+│   └── 13_Task_21st_June.js
 │
 ├── interview.md                                # JavaScript Interview Questions & Concepts
 │
@@ -749,6 +750,7 @@ Hands-on tasks and assignments from live learning sessions:
 - **10_Task_22th_May.js** - Task from 22nd May session
 - **11_Task_03rd_June.js** - Task from 3rd June session
 - **12_Task_08th_June.js** - Task from 8th June session
+- **13_Task_21st_June.js** - OOP Class and Object research task from 21st June session
 
 ---
 
@@ -1155,6 +1157,7 @@ node Task_Live_Class/09_Task_20th_May.js
 node Task_Live_Class/10_Task_22th_May.js
 node Task_Live_Class/11_Task_03rd_June.js
 node Task_Live_Class/12_Task_08th_June.js
+node Task_Live_Class/13_Task_21st_June.js
 ```
 
 ---
@@ -1218,4 +1221,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 18, 2026 — Added Chapter 20: Advanced Playwright with placeholder content*
+*Last updated: June 21, 2026 — Added Task 13: OOP Class and Object research (21st June session)*
