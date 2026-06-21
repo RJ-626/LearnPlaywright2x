@@ -30,7 +30,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 17: Promises](#chapter-17-promises)
   - [Chapter 18: Async/Await](#chapter-18-asyncawait)
   - [Chapter 19: Playwright Basics](#chapter-19-playwright-basics)
-  - [Chapter 20: Advanced Playwright](#chapter-20-advanced-playwright)
+  - [Chapter 20: TypeScript Basics](#chapter-20-typescript-basics)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -715,21 +715,24 @@ Introduction to Playwright test automation framework:
 
 ---
 
-### Chapter 20: Advanced Playwright
+### Chapter 20: TypeScript Basics
 
-**Files:** `chapter_20_Advanced_Playwright/`
+**Files:** `chapter_20_TypeScript_Basics/`
 
-Advanced concepts in Playwright test automation:
-- **168_intro.js** - Introduction to advanced Playwright topics
+Introduction to TypeScript fundamentals for Playwright automation:
+- **EXPORT_IMPORT/168_EXPORT_IMPORT.js** - Introduction to export and import syntax
+- **EXPORT_IMPORT/169_Utils.js** - Named import example using utils.js and testutils.js
+- **EXPORT_IMPORT/170_Loggers.js** - Default import example using logger.js
+- **EXPORT_IMPORT/Explaindefault.md** - Explanation of default vs named exports
+- **utils.js** - Named exports (`Base_URL`, `formatUpperCaseString`)
+- **testutils.js** - Named exports (`Base_URL`, `formatTestName`)
+- **logger.js** - Default export (`log`) and named export (`log2`)
 
 **Key Concepts:**
-- Advanced Playwright patterns and best practices
-- Page Object Model (POM) fundamentals
-- Custom fixtures and test extensions
-- API testing with Playwright
-- Advanced selectors and locators
-- Handling complex user interactions
-- Test reporting and CI/CD integration
+- Named exports vs default exports
+- Import aliases using `as`
+- Re-exporting modules
+- ES Module syntax in TypeScript/JavaScript
 
 ---
 
@@ -1140,7 +1143,9 @@ npx playwright test --headed
 
 ### Run Chapter 20 Files
 ```bash
-node chapter_20_Advanced_Playwright/168_intro.js
+node chapter_20_TypeScript_Basics/EXPORT_IMPORT/168_EXPORT_IMPORT.js
+node chapter_20_TypeScript_Basics/EXPORT_IMPORT/169_Utils.js
+node chapter_20_TypeScript_Basics/EXPORT_IMPORT/170_Loggers.js
 ```
 
 ### Run Task Live Class Files
@@ -1185,7 +1190,7 @@ node Task_Live_Class/13_Task_21st_June.js
 | **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
 | **Async/Await** | `async` functions, `await` keyword, `try...catch...finally`, sequential vs parallel execution, solving callback hell |
 | **Playwright Basics** | Playwright installation, project setup, browser automation foundation |
-| **Advanced Playwright** | Advanced patterns, POM, fixtures, API testing, complex interactions, CI/CD |
+| **TypeScript Basics** | Export/import syntax, named vs default exports, import aliases, ES Module fundamentals |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
