@@ -30,7 +30,7 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 17: Promises](#chapter-17-promises)
   - [Chapter 18: Async/Await](#chapter-18-asyncawait)
   - [Chapter 19: Playwright Basics](#chapter-19-playwright-basics)
-  - [Chapter 20: TypeScript Basics](#chapter-20-typescript-basics)
+  - [Chapter 20: OOP Basics](#chapter-20-oop-basics)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -265,12 +265,21 @@ LearnPlaywright2x/
 │       ├── Codegen_TTA_Card.spec.ts            # Generated TTACart login test
 │       └── example.spec.ts                     # Sample Playwright test
 │
-├── chapter_20_TypeScript_Basics/              # TypeScript Basics - Export/Import
-│   ├── EXPORT_IMPORT/                          # Export and Import examples
+├── chapter_20_Oops_Basics/                     # OOP Basics - Export/Import & Class/Object
+│   ├── 01_EXPORT_IMPORT/                       # Export and Import examples
 │   │   ├── 168_EXPORT_IMPORT.js                # Introduction to export/import
 │   │   ├── 169_Utils.js                        # Named import example
 │   │   ├── 170_Loggers.js                      # Default import example
 │   │   └── Explaindefault.md                   # Default vs named exports guide
+│   ├── 02_Class_object/                        # Class and Object concepts
+│   │   ├── 171_class_obj.js                    # Basic class structure (attributes & behaviour)
+│   │   ├── 172_class_obj_example.js            # Class with constructor
+│   │   ├── 173_Car_class.js                    # Class with parameterized constructor
+│   │   ├── 174_Real_example.js                 # Real-world TestCase class example
+│   │   ├── 175_IQ.js                           # Browser class interview question
+│   │   ├── 176_Private_public.js               # Private (#) vs public fields
+│   │   ├── 177_Static.js                       # Static variables and properties
+│   │   └── 178_static_example.js               # Static variable example
 │   ├── utils.js                                # Named exports utility
 │   ├── testutils.js                            # Named exports test utility
 │   └── logger.js                               # Default export logger
@@ -725,24 +734,41 @@ Introduction to Playwright test automation framework:
 
 ---
 
-### Chapter 20: TypeScript Basics
+### Chapter 20: OOP Basics
 
-**Files:** `chapter_20_TypeScript_Basics/`
+**Files:** `chapter_20_Oops_Basics/`
 
-Introduction to TypeScript fundamentals for Playwright automation:
-- **EXPORT_IMPORT/168_EXPORT_IMPORT.js** - Introduction to export and import syntax
-- **EXPORT_IMPORT/169_Utils.js** - Named import example using utils.js and testutils.js
-- **EXPORT_IMPORT/170_Loggers.js** - Default import example using logger.js
-- **EXPORT_IMPORT/Explaindefault.md** - Explanation of default vs named exports
-- **utils.js** - Named exports (`Base_URL`, `formatUpperCaseString`)
-- **testutils.js** - Named exports (`Base_URL`, `formatTestName`)
-- **logger.js** - Default export (`log`) and named export (`log2`)
+Introduction to Object-Oriented Programming (OOP) fundamentals in JavaScript, covering export/import and class/object concepts:
+
+#### 20.1 Export/Import
+- **Files:** `01_EXPORT_IMPORT/`
+- **168_EXPORT_IMPORT.js** - Introduction to export and import syntax
+- **169_Utils.js** - Named import example using utils.js and testutils.js
+- **170_Loggers.js** - Default import example using logger.js
+- **Explaindefault.md** - Explanation of default vs named exports
+
+#### 20.2 Class and Object
+- **Files:** `02_Class_object/`
+- **171_class_obj.js** - Basic class structure with attributes and behaviour
+- **172_class_obj_example.js** - Class with constructor (default constructor)
+- **173_Car_class.js** - Class with parameterized constructor and methods
+- **174_Real_example.js** - Real-world TestCase class example
+- **175_IQ.js** - Browser class interview question
+- **176_Private_public.js** - Private (`#`) vs public fields
+- **177_Static.js** - Static variables and properties
+- **178_static_example.js** - Static variable example
 
 **Key Concepts:**
 - Named exports vs default exports
 - Import aliases using `as`
 - Re-exporting modules
 - ES Module syntax in TypeScript/JavaScript
+- Class declaration and structure
+- Constructors (default and parameterized)
+- Attributes and methods
+- Private (`#`) vs public fields
+- Static variables and methods
+- Real-world OOP patterns for QA/Test automation
 
 ---
 
@@ -1153,9 +1179,17 @@ npx playwright test --headed
 
 ### Run Chapter 20 Files
 ```bash
-node chapter_20_TypeScript_Basics/EXPORT_IMPORT/168_EXPORT_IMPORT.js
-node chapter_20_TypeScript_Basics/EXPORT_IMPORT/169_Utils.js
-node chapter_20_TypeScript_Basics/EXPORT_IMPORT/170_Loggers.js
+node chapter_20_Oops_Basics/01_EXPORT_IMPORT/168_EXPORT_IMPORT.js
+node chapter_20_Oops_Basics/01_EXPORT_IMPORT/169_Utils.js
+node chapter_20_Oops_Basics/01_EXPORT_IMPORT/170_Loggers.js
+node chapter_20_Oops_Basics/02_Class_object/171_class_obj.js
+node chapter_20_Oops_Basics/02_Class_object/172_class_obj_example.js
+node chapter_20_Oops_Basics/02_Class_object/173_Car_class.js
+node chapter_20_Oops_Basics/02_Class_object/174_Real_example.js
+node chapter_20_Oops_Basics/02_Class_object/175_IQ.js
+node chapter_20_Oops_Basics/02_Class_object/176_Private_public.js
+node chapter_20_Oops_Basics/02_Class_object/177_Static.js
+node chapter_20_Oops_Basics/02_Class_object/178_static_example.js
 ```
 
 ### Run Task Live Class Files
@@ -1200,7 +1234,7 @@ node Task_Live_Class/13_Task_21st_June.js
 | **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
 | **Async/Await** | `async` functions, `await` keyword, `try...catch...finally`, sequential vs parallel execution, solving callback hell |
 | **Playwright Basics** | Playwright installation, project setup, browser automation foundation |
-| **TypeScript Basics** | Export/import syntax, named vs default exports, import aliases, ES Module fundamentals |
+| **OOP Basics** | Classes, objects, constructors, attributes, methods, private/public fields, static variables, export/import syntax, named vs default exports, ES Module fundamentals |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1236,4 +1270,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 21, 2026 — Added Task 13: OOP Class and Object research (21st June session)*
+*Last updated: June 23, 2026 — Replaced Chapter 20 with OOP Basics: added Class/Object concepts (constructors, private/public, static) alongside existing Export/Import content*
