@@ -265,7 +265,7 @@ LearnPlaywright2x/
 │       ├── Codegen_TTA_Card.spec.ts            # Generated TTACart login test
 │       └── example.spec.ts                     # Sample Playwright test
 │
-├── chapter_20_Oops_Basics/                     # OOP Basics - Export/Import & Class/Object
+├── chapter_20_Oops_Basics/                     # OOP Basics - Export/Import, Class/Object, Encapsulation, Inheritance, Polymorphism
 │   ├── 01_EXPORT_IMPORT/                       # Export and Import examples
 │   │   ├── 168_EXPORT_IMPORT.js                # Introduction to export/import
 │   │   ├── 169_Utils.js                        # Named import example
@@ -280,6 +280,28 @@ LearnPlaywright2x/
 │   │   ├── 176_Private_public.js               # Private (#) vs public fields
 │   │   ├── 177_Static.js                       # Static variables and properties
 │   │   └── 178_static_example.js               # Static variable example
+│   ├── 03_Encasulation/                        # Encapsulation concepts
+│   │   ├── 179_encapsulation.js                # Introduction to encapsulation with private fields
+│   │   ├── 180_encap_real example .js          # Real-world encapsulation example
+│   │   ├── 181_encap._car.js                   # Car class encapsulation example
+│   │   └── 182_encap_Bank.js                   # Bank account encapsulation example
+│   ├── 04_Inheritance/                         # Inheritance concepts
+│   │   ├── 183_single-inheritance.js           # Single inheritance basics
+│   │   ├── 184_single_inheritance_ex.js        # Single inheritance example
+│   │   ├── 185_single_inheritance_controversial.js  # Single inheritance controversial discussion
+│   │   ├── 186_IQ.js                           # Inheritance interview questions set 1
+│   │   ├── 187_IQ.js                           # Inheritance interview questions set 2
+│   │   ├── 188_Real_Page_Object_mode.js        # Real-world Page Object Model example
+│   │   ├── 189_multiple_inheritance.js         # Multiple inheritance patterns
+│   │   ├── 190_mutilevel_inheritance.js        # Multilevel inheritance
+│   │   └── 191_Hierarchial_inheritance.js      # Hierarchical inheritance
+│   ├── 05_Polymorphism/                        # Polymorphism concepts
+│   │   └── 192_Method_overridding.js           # Method overriding example
+│   ├── Interview_Ques/                         # OOP Interview Questions
+│   │   ├── Ques1.js
+│   │   ├── Ques2.js
+│   │   ├── Ques3.js
+│   │   └── Ques4.js
 │   ├── utils.js                                # Named exports utility
 │   ├── testutils.js                            # Named exports test utility
 │   └── logger.js                               # Default export logger
@@ -298,7 +320,8 @@ LearnPlaywright2x/
 │   ├── 11_Task_03rd_June.js
 │   ├── 12_Task_08th_June.js
 │   ├── 13_Task_21st_June.js
-│   └── 14_Task_22th_June.js
+│   ├── 14_Task_22th_June.js
+│   └── 15_Task_24th_June.js                    # Private Field exercise (Token class)
 │
 ├── interview.md                                # JavaScript Interview Questions & Concepts
 │
@@ -759,6 +782,36 @@ Introduction to Object-Oriented Programming (OOP) fundamentals in JavaScript, co
 - **177_Static.js** - Static variables and properties
 - **178_static_example.js** - Static variable example
 
+#### 20.3 Encapsulation
+- **Files:** `03_Encasulation/`
+- **179_encapsulation.js** - Introduction to encapsulation with private fields (BankAccount example)
+- **180_encap_real example .js** - Real-world encapsulation example
+- **181_encap._car.js** - Car class encapsulation example
+- **182_encap_Bank.js** - Bank account encapsulation example
+
+#### 20.4 Inheritance
+- **Files:** `04_Inheritance/`
+- **183_single-inheritance.js** - Single inheritance basics (BasePage → loginPage)
+- **184_single_inheritance_ex.js** - Single inheritance example
+- **185_single_inheritance_controversial.js** - Single inheritance controversial discussion
+- **186_IQ.js** - Inheritance interview questions set 1
+- **187_IQ.js** - Inheritance interview questions set 2
+- **188_Real_Page_Object_mode.js** - Real-world Page Object Model example
+- **189_multiple_inheritance.js** - Multiple inheritance patterns
+- **190_mutilevel_inheritance.js** - Multilevel inheritance
+- **191_Hierarchial_inheritance.js** - Hierarchical inheritance
+
+#### 20.5 Polymorphism
+- **Files:** `05_Polymorphism/`
+- **192_Method_overridding.js** - Method overriding example (BaseTest → apiTest)
+
+#### OOP Interview Questions
+- **Files:** `Interview_Ques/`
+- **Ques1.js** - Bug class exercise
+- **Ques2.js** - OOP interview question
+- **Ques3.js** - OOP interview question
+- **Ques4.js** - OOP interview question
+
 **Key Concepts:**
 - Named exports vs default exports
 - Import aliases using `as`
@@ -769,6 +822,10 @@ Introduction to Object-Oriented Programming (OOP) fundamentals in JavaScript, co
 - Attributes and methods
 - Private (`#`) vs public fields
 - Static variables and methods
+- Encapsulation and data hiding with private fields
+- Inheritance types: single, multiple, multilevel, hierarchical
+- Method overriding and polymorphism
+- Page Object Model (POM) patterns
 - Real-world OOP patterns for QA/Test automation
 
 ---
@@ -792,6 +849,7 @@ Hands-on tasks and assignments from live learning sessions:
 - **12_Task_08th_June.js** - Task from 8th June session
 - **13_Task_21st_June.js** - OOP Class and Object research task from 21st June session
 - **14_Task_22th_June.js** - Calculator and Students class task from 22nd June session
+- **15_Task_24th_June.js** - Private Field exercise (Token class with #value, getToken, getMasked)
 
 ---
 
@@ -1192,6 +1250,24 @@ node chapter_20_Oops_Basics/02_Class_object/175_IQ.js
 node chapter_20_Oops_Basics/02_Class_object/176_Private_public.js
 node chapter_20_Oops_Basics/02_Class_object/177_Static.js
 node chapter_20_Oops_Basics/02_Class_object/178_static_example.js
+node chapter_20_Oops_Basics/03_Encasulation/179_encapsulation.js
+node "chapter_20_Oops_Basics/03_Encasulation/180_encap_real example .js"
+node chapter_20_Oops_Basics/03_Encasulation/181_encap._car.js
+node chapter_20_Oops_Basics/03_Encasulation/182_encap_Bank.js
+node chapter_20_Oops_Basics/04_Inheritance/183_single-inheritance.js
+node chapter_20_Oops_Basics/04_Inheritance/184_single_inheritance_ex.js
+node chapter_20_Oops_Basics/04_Inheritance/185_single_inheritance_controversial.js
+node chapter_20_Oops_Basics/04_Inheritance/186_IQ.js
+node chapter_20_Oops_Basics/04_Inheritance/187_IQ.js
+node chapter_20_Oops_Basics/04_Inheritance/188_Real_Page_Object_mode.js
+node chapter_20_Oops_Basics/04_Inheritance/189_multiple_inheritance.js
+node chapter_20_Oops_Basics/04_Inheritance/190_mutilevel_inheritance.js
+node chapter_20_Oops_Basics/04_Inheritance/191_Hierarchial_inheritance.js
+node chapter_20_Oops_Basics/05_Polymorphism/192_Method_overridding.js
+node chapter_20_Oops_Basics/Interview_Ques/Ques1.js
+node chapter_20_Oops_Basics/Interview_Ques/Ques2.js
+node chapter_20_Oops_Basics/Interview_Ques/Ques3.js
+node chapter_20_Oops_Basics/Interview_Ques/Ques4.js
 ```
 
 ### Run Task Live Class Files
@@ -1210,6 +1286,7 @@ node Task_Live_Class/11_Task_03rd_June.js
 node Task_Live_Class/12_Task_08th_June.js
 node Task_Live_Class/13_Task_21st_June.js
 node Task_Live_Class/14_Task_22th_June.js
+node Task_Live_Class/15_Task_24th_June.js
 ```
 
 ---
@@ -1237,7 +1314,7 @@ node Task_Live_Class/14_Task_22th_June.js
 | **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
 | **Async/Await** | `async` functions, `await` keyword, `try...catch...finally`, sequential vs parallel execution, solving callback hell |
 | **Playwright Basics** | Playwright installation, project setup, browser automation foundation |
-| **OOP Basics** | Classes, objects, constructors, attributes, methods, private/public fields, static variables, export/import syntax, named vs default exports, ES Module fundamentals |
+| **OOP Basics** | Classes, objects, constructors, attributes, methods, private/public fields, static variables, export/import syntax, named vs default exports, ES Module fundamentals, encapsulation, inheritance (single/multiple/multilevel/hierarchical), polymorphism, method overriding, Page Object Model |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
