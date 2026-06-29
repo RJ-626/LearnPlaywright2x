@@ -30,7 +30,14 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 17: Promises](#chapter-17-promises)
   - [Chapter 18: Async/Await](#chapter-18-asyncawait)
   - [Chapter 19: Playwright Basics](#chapter-19-playwright-basics)
-  - [Chapter 20: OOP Basics](#chapter-20-oop-basics)
+  - [Chapter 20: Export/Import](#chapter-20-exportimport)
+  - [Chapter 21: Class and Object](#chapter-21-class-and-object)
+  - [Chapter 22: Encapsulation](#chapter-22-encapsulation)
+  - [Chapter 23: Inheritance](#chapter-23-inheritance)
+  - [Chapter 24: Polymorphism](#chapter-24-polymorphism)
+  - [Chapter 25: OOP Interview Questions](#chapter-25-oop-interview-questions)
+  - [Chapter 26: TypeScript Basics](#chapter-26-typescript-basics)
+  - [Chapter 27: TypeScript Interface](#chapter-27-typescript-interface)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -57,6 +64,9 @@ Each chapter contains practical examples with VS Code-specific tips, keyboard sh
 
 ```
 LearnPlaywright2x/
+├── .vscode/                                    # VS Code workspace settings
+│   └── settings.json                           # Code Runner configuration for TypeScript
+│
 ├── chapter_01_Basics/                          # JavaScript Basics
 │   ├── 01_Basics.js
 │   ├── 02_JS.js
@@ -265,46 +275,68 @@ LearnPlaywright2x/
 │       ├── Codegen_TTA_Card.spec.ts            # Generated TTACart login test
 │       └── example.spec.ts                     # Sample Playwright test
 │
-├── chapter_20_Oops_Basics/                     # OOP Basics - Export/Import, Class/Object, Encapsulation, Inheritance, Polymorphism
-│   ├── 01_EXPORT_IMPORT/                       # Export and Import examples
-│   │   ├── 168_EXPORT_IMPORT.js                # Introduction to export/import
-│   │   ├── 169_Utils.js                        # Named import example
-│   │   ├── 170_Loggers.js                      # Default import example
-│   │   └── Explaindefault.md                   # Default vs named exports guide
-│   ├── 02_Class_object/                        # Class and Object concepts
-│   │   ├── 171_class_obj.js                    # Basic class structure (attributes & behaviour)
-│   │   ├── 172_class_obj_example.js            # Class with constructor
-│   │   ├── 173_Car_class.js                    # Class with parameterized constructor
-│   │   ├── 174_Real_example.js                 # Real-world TestCase class example
-│   │   ├── 175_IQ.js                           # Browser class interview question
-│   │   ├── 176_Private_public.js               # Private (#) vs public fields
-│   │   ├── 177_Static.js                       # Static variables and properties
-│   │   └── 178_static_example.js               # Static variable example
-│   ├── 03_Encasulation/                        # Encapsulation concepts
-│   │   ├── 179_encapsulation.js                # Introduction to encapsulation with private fields
-│   │   ├── 180_encap_real example .js          # Real-world encapsulation example
-│   │   ├── 181_encap._car.js                   # Car class encapsulation example
-│   │   └── 182_encap_Bank.js                   # Bank account encapsulation example
-│   ├── 04_Inheritance/                         # Inheritance concepts
-│   │   ├── 183_single-inheritance.js           # Single inheritance basics
-│   │   ├── 184_single_inheritance_ex.js        # Single inheritance example
-│   │   ├── 185_single_inheritance_controversial.js  # Single inheritance controversial discussion
-│   │   ├── 186_IQ.js                           # Inheritance interview questions set 1
-│   │   ├── 187_IQ.js                           # Inheritance interview questions set 2
-│   │   ├── 188_Real_Page_Object_mode.js        # Real-world Page Object Model example
-│   │   ├── 189_multiple_inheritance.js         # Multiple inheritance patterns
-│   │   ├── 190_mutilevel_inheritance.js        # Multilevel inheritance
-│   │   └── 191_Hierarchial_inheritance.js      # Hierarchical inheritance
-│   ├── 05_Polymorphism/                        # Polymorphism concepts
-│   │   └── 192_Method_overridding.js           # Method overriding example
-│   ├── Interview_Ques/                         # OOP Interview Questions
-│   │   ├── Ques1.js
-│   │   ├── Ques2.js
-│   │   ├── Ques3.js
-│   │   └── Ques4.js
-│   ├── utils.js                                # Named exports utility
+├── chapter_20_EXPORT_IMPORT/                   # Export and Import examples
+│   ├── 168_EXPORT_IMPORT.js                    # Introduction to export and import syntax
+│   ├── 169_Utils.js                            # Named import example
+│   ├── 170_Loggers.js                          # Default import example
+│   ├── Explaindefault.md                       # Default vs named exports guide
+│   ├── logger.js                               # Default export logger
 │   ├── testutils.js                            # Named exports test utility
-│   └── logger.js                               # Default export logger
+│   └── utils.js                                # Named exports utility
+│
+├── chapter_21_Class_object/                    # Class and Object concepts
+│   ├── 171_class_obj.js                        # Basic class structure with attributes and behaviour
+│   ├── 172_class_obj_example.js                # Class with constructor
+│   ├── 173_Car_class.js                        # Class with parameterized constructor
+│   ├── 174_Real_example.js                     # Real-world TestCase class example
+│   ├── 175_IQ.js                               # Browser class interview question
+│   ├── 176_Private_public.js                   # Private (#) vs public fields
+│   ├── 177_Static.js                           # Static variables and properties
+│   └── 178_static_example.js                   # Static variable example
+│
+├── chapter_22_Encasulation/                    # Encapsulation concepts
+│   ├── 179_encapsulation.js                    # Introduction to encapsulation with private fields
+│   ├── 180_encap_real example .js              # Real-world encapsulation example
+│   ├── 181_encap._car.js                       # Car class encapsulation example
+│   └── 182_encap_Bank.js                       # Bank account encapsulation example
+│
+├── chapter_23_Inheritance/                     # Inheritance concepts
+│   ├── 183_single-inheritance.js               # Single inheritance basics
+│   ├── 184_single_inheritance_ex.js            # Single inheritance example
+│   ├── 185_single_inheritance_controversial.js # Single inheritance controversial discussion
+│   ├── 186_IQ.js                               # Inheritance interview questions set 1
+│   ├── 187_IQ.js                               # Inheritance interview questions set 2
+│   ├── 188_Real_Page_Object_mode.js            # Real-world Page Object Model example
+│   ├── 189_multiple_inheritance.js             # Multiple inheritance patterns
+│   ├── 190_mutilevel_inheritance.js            # Multilevel inheritance
+│   └── 191_Hierarchial_inheritance.js          # Hierarchical inheritance
+│
+├── chapter_24_Polymorphism/                    # Polymorphism concepts
+│   └── 192_Method_overridding.js               # Method overriding example
+│
+├── chapter_25_Interview_Ques/                  # OOP Interview Questions
+│   ├── Ques1.js
+│   ├── Ques2.js
+│   ├── Ques3.js
+│   └── Ques4.js
+│
+├── chapter_26_Typescript/                      # TypeScript Basics
+│   ├── 193_TS.js
+│   ├── 194_HelloWorld.ts
+│   ├── 195_TS_Part1.ts
+│   ├── 196_TS_Part2.ts
+│   ├── 197_TS_Part3.ts
+│   ├── 198_TS_Part_4.ts
+│   ├── 199_IQ.ts
+│   ├── 200_IQ.ts
+│   ├── package.json
+│   └── package-lock.json
+│
+├── chapter_27_TypeScript_Interface/            # TypeScript Interfaces
+│   ├── 201_Interface.ts
+│   ├── 202_Interface_example.ts
+│   ├── 203_Interface_Readonly.ts
+│   └── 204_Interface_readonly_example.ts
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -319,7 +351,6 @@ LearnPlaywright2x/
 │   ├── 10_Task_22th_May.js
 │   ├── 11_Task_03rd_June.js
 │   ├── 12_Task_08th_June.js
-│   ├── 13_Task_21st_June.js
 │   ├── 14_Task_22th_June.js
 │   └── 15_Task_24th_June.js                    # Private Field exercise (Token class)
 │
@@ -334,6 +365,7 @@ LearnPlaywright2x/
 
 - [Node.js](https://nodejs.org/) (v16 or higher recommended)
 - [VS Code](https://code.visualstudio.com/) (recommended editor)
+- [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extension (for running TypeScript with the ▶️ button)
 - Basic understanding of programming concepts
 
 ---
@@ -356,7 +388,15 @@ LearnPlaywright2x/
    node filename.js
    ```
 
-4. **Use VS Code Debugger:**
+4. **Run TypeScript files:**
+   ```bash
+   cd chapter_26_Typescript
+   npm install
+   npx ts-node filename.ts
+   ```
+   Or use the **▶️ Run Code** button in VS Code (requires Code Runner extension).
+
+5. **Use VS Code Debugger:**
    - Press `F5` to start debugging
    - Press `F9` to toggle breakpoints
    - Press `F10` to step over, `F11` to step into
@@ -758,21 +798,32 @@ Introduction to Playwright test automation framework:
 
 ---
 
-### Chapter 20: OOP Basics
+### Chapter 20: Export/Import
 
-**Files:** `chapter_20_Oops_Basics/`
+**Files:** `chapter_20_EXPORT_IMPORT/`
 
-Introduction to Object-Oriented Programming (OOP) fundamentals in JavaScript, covering export/import and class/object concepts:
-
-#### 20.1 Export/Import
-- **Files:** `01_EXPORT_IMPORT/`
+Introduction to ES Module export and import syntax in JavaScript:
 - **168_EXPORT_IMPORT.js** - Introduction to export and import syntax
 - **169_Utils.js** - Named import example using utils.js and testutils.js
 - **170_Loggers.js** - Default import example using logger.js
 - **Explaindefault.md** - Explanation of default vs named exports
+- **logger.js** - Default export logger
+- **testutils.js** - Named exports test utility
+- **utils.js** - Named exports utility
 
-#### 20.2 Class and Object
-- **Files:** `02_Class_object/`
+**Key Concepts:**
+- Named exports vs default exports
+- Import aliases using `as`
+- Re-exporting modules
+- ES Module syntax in JavaScript
+
+---
+
+### Chapter 21: Class and Object
+
+**Files:** `chapter_21_Class_object/`
+
+Object-Oriented Programming fundamentals: class declaration, constructors, and object creation:
 - **171_class_obj.js** - Basic class structure with attributes and behaviour
 - **172_class_obj_example.js** - Class with constructor (default constructor)
 - **173_Car_class.js** - Class with parameterized constructor and methods
@@ -782,15 +833,37 @@ Introduction to Object-Oriented Programming (OOP) fundamentals in JavaScript, co
 - **177_Static.js** - Static variables and properties
 - **178_static_example.js** - Static variable example
 
-#### 20.3 Encapsulation
-- **Files:** `03_Encasulation/`
+**Key Concepts:**
+- Class declaration and structure
+- Constructors (default and parameterized)
+- Attributes and methods
+- Private (`#`) vs public fields
+- Static variables and methods
+
+---
+
+### Chapter 22: Encapsulation
+
+**Files:** `chapter_22_Encasulation/`
+
+Data hiding and encapsulation concepts in JavaScript:
 - **179_encapsulation.js** - Introduction to encapsulation with private fields (BankAccount example)
 - **180_encap_real example .js** - Real-world encapsulation example
 - **181_encap._car.js** - Car class encapsulation example
 - **182_encap_Bank.js** - Bank account encapsulation example
 
-#### 20.4 Inheritance
-- **Files:** `04_Inheritance/`
+**Key Concepts:**
+- Encapsulation and data hiding with private fields
+- Getters and setters for controlled access
+- Real-world encapsulation patterns
+
+---
+
+### Chapter 23: Inheritance
+
+**Files:** `chapter_23_Inheritance/`
+
+Inheritance patterns and the `extends` keyword in JavaScript:
 - **183_single-inheritance.js** - Single inheritance basics (BasePage → loginPage)
 - **184_single_inheritance_ex.js** - Single inheritance example
 - **185_single_inheritance_controversial.js** - Single inheritance controversial discussion
@@ -801,32 +874,84 @@ Introduction to Object-Oriented Programming (OOP) fundamentals in JavaScript, co
 - **190_mutilevel_inheritance.js** - Multilevel inheritance
 - **191_Hierarchial_inheritance.js** - Hierarchical inheritance
 
-#### 20.5 Polymorphism
-- **Files:** `05_Polymorphism/`
+**Key Concepts:**
+- Inheritance types: single, multiple, multilevel, hierarchical
+- `extends` keyword and `super()` constructor
+- Page Object Model (POM) patterns
+- Real-world inheritance patterns for QA/Test automation
+
+---
+
+### Chapter 24: Polymorphism
+
+**Files:** `chapter_24_Polymorphism/`
+
+Polymorphism and method overriding in JavaScript:
 - **192_Method_overridding.js** - Method overriding example (BaseTest → apiTest)
 
-#### OOP Interview Questions
-- **Files:** `Interview_Ques/`
+**Key Concepts:**
+- Method overriding and polymorphism
+- Runtime behavior modification through inheritance
+
+---
+
+### Chapter 25: OOP Interview Questions
+
+**Files:** `chapter_25_Interview_Ques/`
+
+Hands-on OOP interview questions and exercises:
 - **Ques1.js** - Bug class exercise
 - **Ques2.js** - OOP interview question
 - **Ques3.js** - OOP interview question
 - **Ques4.js** - OOP interview question
 
+---
+
+### Chapter 26: TypeScript Basics
+
+**Files:** `chapter_26_Typescript/`
+
+Introduction to TypeScript: types, interfaces, and compilation:
+- **193_TS.js** - TypeScript fundamentals in JavaScript context
+- **194_HelloWorld.ts** - First TypeScript program
+- **195_TS_Part1.ts** - TypeScript basics: types and annotations
+- **196_TS_Part2.ts** - Advanced TypeScript concepts
+- **197_TS_Part3.ts** - TypeScript part 3
+- **198_TS_Part_4.ts** - TypeScript part 4
+- **199_IQ.ts** - TypeScript interview questions
+- **200_IQ.ts** - TypeScript interview questions set 2
+- **package.json** - Project configuration with TypeScript and ts-node dependencies
+
+**Setup:**
+```bash
+cd chapter_26_Typescript
+npm install
+npx ts-node 194_HelloWorld.ts
+```
+
 **Key Concepts:**
-- Named exports vs default exports
-- Import aliases using `as`
-- Re-exporting modules
-- ES Module syntax in TypeScript/JavaScript
-- Class declaration and structure
-- Constructors (default and parameterized)
-- Attributes and methods
-- Private (`#`) vs public fields
-- Static variables and methods
-- Encapsulation and data hiding with private fields
-- Inheritance types: single, multiple, multilevel, hierarchical
-- Method overriding and polymorphism
-- Page Object Model (POM) patterns
-- Real-world OOP patterns for QA/Test automation
+- Type annotations and inference
+- Basic types: string, number, boolean, array, object
+- TypeScript compilation and ts-node
+- VS Code Code Runner configuration for TypeScript
+
+---
+
+### Chapter 27: TypeScript Interface
+
+**Files:** `chapter_27_TypeScript_Interface/`
+
+TypeScript interfaces for defining object shapes and contracts:
+- **201_Interface.ts** - Introduction to TypeScript interfaces
+- **202_Interface_example.ts** - Interface practical examples
+- **203_Interface_Readonly.ts** - Readonly properties in interfaces
+- **204_Interface_readonly_example.ts** - Readonly interface examples
+
+**Key Concepts:**
+- Interface declarations and usage
+- Optional and readonly properties
+- Interface vs type aliases
+- Real-world interface patterns
 
 ---
 
@@ -847,7 +972,6 @@ Hands-on tasks and assignments from live learning sessions:
 - **10_Task_22th_May.js** - Task from 22nd May session
 - **11_Task_03rd_June.js** - Task from 3rd June session
 - **12_Task_08th_June.js** - Task from 8th June session
-- **13_Task_21st_June.js** - OOP Class and Object research task from 21st June session
 - **14_Task_22th_June.js** - Calculator and Students class task from 22nd June session
 - **15_Task_24th_June.js** - Private Field exercise (Token class with #value, getToken, getMasked)
 
@@ -1239,35 +1363,77 @@ npx playwright test --headed
 
 ### Run Chapter 20 Files
 ```bash
-node chapter_20_Oops_Basics/01_EXPORT_IMPORT/168_EXPORT_IMPORT.js
-node chapter_20_Oops_Basics/01_EXPORT_IMPORT/169_Utils.js
-node chapter_20_Oops_Basics/01_EXPORT_IMPORT/170_Loggers.js
-node chapter_20_Oops_Basics/02_Class_object/171_class_obj.js
-node chapter_20_Oops_Basics/02_Class_object/172_class_obj_example.js
-node chapter_20_Oops_Basics/02_Class_object/173_Car_class.js
-node chapter_20_Oops_Basics/02_Class_object/174_Real_example.js
-node chapter_20_Oops_Basics/02_Class_object/175_IQ.js
-node chapter_20_Oops_Basics/02_Class_object/176_Private_public.js
-node chapter_20_Oops_Basics/02_Class_object/177_Static.js
-node chapter_20_Oops_Basics/02_Class_object/178_static_example.js
-node chapter_20_Oops_Basics/03_Encasulation/179_encapsulation.js
-node "chapter_20_Oops_Basics/03_Encasulation/180_encap_real example .js"
-node chapter_20_Oops_Basics/03_Encasulation/181_encap._car.js
-node chapter_20_Oops_Basics/03_Encasulation/182_encap_Bank.js
-node chapter_20_Oops_Basics/04_Inheritance/183_single-inheritance.js
-node chapter_20_Oops_Basics/04_Inheritance/184_single_inheritance_ex.js
-node chapter_20_Oops_Basics/04_Inheritance/185_single_inheritance_controversial.js
-node chapter_20_Oops_Basics/04_Inheritance/186_IQ.js
-node chapter_20_Oops_Basics/04_Inheritance/187_IQ.js
-node chapter_20_Oops_Basics/04_Inheritance/188_Real_Page_Object_mode.js
-node chapter_20_Oops_Basics/04_Inheritance/189_multiple_inheritance.js
-node chapter_20_Oops_Basics/04_Inheritance/190_mutilevel_inheritance.js
-node chapter_20_Oops_Basics/04_Inheritance/191_Hierarchial_inheritance.js
-node chapter_20_Oops_Basics/05_Polymorphism/192_Method_overridding.js
-node chapter_20_Oops_Basics/Interview_Ques/Ques1.js
-node chapter_20_Oops_Basics/Interview_Ques/Ques2.js
-node chapter_20_Oops_Basics/Interview_Ques/Ques3.js
-node chapter_20_Oops_Basics/Interview_Ques/Ques4.js
+node chapter_20_EXPORT_IMPORT/168_EXPORT_IMPORT.js
+node chapter_20_EXPORT_IMPORT/169_Utils.js
+node chapter_20_EXPORT_IMPORT/170_Loggers.js
+```
+
+### Run Chapter 21 Files
+```bash
+node chapter_21_Class_object/171_class_obj.js
+node chapter_21_Class_object/172_class_obj_example.js
+node chapter_21_Class_object/173_Car_class.js
+node chapter_21_Class_object/174_Real_example.js
+node chapter_21_Class_object/175_IQ.js
+node chapter_21_Class_object/176_Private_public.js
+node chapter_21_Class_object/177_Static.js
+node chapter_21_Class_object/178_static_example.js
+```
+
+### Run Chapter 22 Files
+```bash
+node chapter_22_Encasulation/179_encapsulation.js
+node "chapter_22_Encasulation/180_encap_real example .js"
+node chapter_22_Encasulation/181_encap._car.js
+node chapter_22_Encasulation/182_encap_Bank.js
+```
+
+### Run Chapter 23 Files
+```bash
+node chapter_23_Inheritance/183_single-inheritance.js
+node chapter_23_Inheritance/184_single_inheritance_ex.js
+node chapter_23_Inheritance/185_single_inheritance_controversial.js
+node chapter_23_Inheritance/186_IQ.js
+node chapter_23_Inheritance/187_IQ.js
+node chapter_23_Inheritance/188_Real_Page_Object_mode.js
+node chapter_23_Inheritance/189_multiple_inheritance.js
+node chapter_23_Inheritance/190_mutilevel_inheritance.js
+node chapter_23_Inheritance/191_Hierarchial_inheritance.js
+```
+
+### Run Chapter 24 Files
+```bash
+node chapter_24_Polymorphism/192_Method_overridding.js
+```
+
+### Run Chapter 25 Files
+```bash
+node chapter_25_Interview_Ques/Ques1.js
+node chapter_25_Interview_Ques/Ques2.js
+node chapter_25_Interview_Ques/Ques3.js
+node chapter_25_Interview_Ques/Ques4.js
+```
+
+### Run Chapter 26 Files (TypeScript)
+```bash
+cd chapter_26_Typescript
+npm install
+npx ts-node 194_HelloWorld.ts
+npx ts-node 195_TS_Part1.ts
+npx ts-node 196_TS_Part2.ts
+npx ts-node 197_TS_Part3.ts
+npx ts-node 198_TS_Part_4.ts
+npx ts-node 199_IQ.ts
+npx ts-node 200_IQ.ts
+```
+
+### Run Chapter 27 Files (TypeScript)
+```bash
+cd chapter_27_TypeScript_Interface
+npx ts-node 201_Interface.ts
+npx ts-node 202_Interface_example.ts
+npx ts-node 203_Interface_Readonly.ts
+npx ts-node 204_Interface_readonly_example.ts
 ```
 
 ### Run Task Live Class Files
@@ -1284,7 +1450,6 @@ node Task_Live_Class/09_Task_20th_May.js
 node Task_Live_Class/10_Task_22th_May.js
 node Task_Live_Class/11_Task_03rd_June.js
 node Task_Live_Class/12_Task_08th_June.js
-node Task_Live_Class/13_Task_21st_June.js
 node Task_Live_Class/14_Task_22th_June.js
 node Task_Live_Class/15_Task_24th_June.js
 ```
@@ -1314,7 +1479,13 @@ node Task_Live_Class/15_Task_24th_June.js
 | **Promises** | Promise creation, `.then()`, `.catch()`, `.finally()`, chaining, `Promise.all()`, `Promise.allSettled()`, interview questions |
 | **Async/Await** | `async` functions, `await` keyword, `try...catch...finally`, sequential vs parallel execution, solving callback hell |
 | **Playwright Basics** | Playwright installation, project setup, browser automation foundation |
-| **OOP Basics** | Classes, objects, constructors, attributes, methods, private/public fields, static variables, export/import syntax, named vs default exports, ES Module fundamentals, encapsulation, inheritance (single/multiple/multilevel/hierarchical), polymorphism, method overriding, Page Object Model |
+| **Export/Import** | Named vs default exports, ES Module syntax, import aliases |
+| **Classes & Objects** | Class declaration, constructors, attributes, methods, private/public fields, static variables |
+| **Encapsulation** | Data hiding, private fields, getters/setters |
+| **Inheritance** | Single, multiple, multilevel, hierarchical inheritance, `extends`, `super()`, Page Object Model |
+| **Polymorphism** | Method overriding, runtime behavior modification |
+| **TypeScript Basics** | Type annotations, basic types, ts-node, VS Code Code Runner setup |
+| **TypeScript Interfaces** | Interface declarations, optional/readonly properties, object contracts |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1350,4 +1521,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 23, 2026 — Added Task 14: Calculator and Students class task (22nd June session)*
+*Last updated: June 29, 2026 — Reorganized OOP chapters (20-25) into separate folders, added TypeScript chapters (26-27), added VS Code Code Runner configuration*
