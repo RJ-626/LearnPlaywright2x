@@ -38,6 +38,9 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 25: OOP Interview Questions](#chapter-25-oop-interview-questions)
   - [Chapter 26: TypeScript Basics](#chapter-26-typescript-basics)
   - [Chapter 27: TypeScript Interface](#chapter-27-typescript-interface)
+  - [Chapter 28: Enums](#chapter-28-enums)
+  - [Chapter 29: Generics](#chapter-29-generics)
+  - [Chapter 30: Public, Private, Protected](#chapter-30-public-private-protected)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -337,6 +340,23 @@ LearnPlaywright2x/
 │   ├── 202_Interface_example.ts
 │   ├── 203_Interface_Readonly.ts
 │   └── 204_Interface_readonly_example.ts
+│
+├── chapter_28_Enum/                            # TypeScript Enums
+│   ├── 211_Enum.ts
+│   ├── 212_Enum_example.ts
+│   ├── 213_enum_real_example.ts
+│   └── 214_enum_API.ts
+│
+├── chapter_29_Generic/                           # TypeScript Generics
+│   ├── 215_generic.ts
+│   ├── 216_generic_class.ts
+│   └── 217_generic_API_response.ts
+│
+├── chapter_30_Public_Private_Protected/          # Access Modifiers & Abstract Classes
+│   ├── 218_ppp.ts
+│   ├── 219_Page_Object_Model.ts
+│   ├── 220_Readonly.ts
+│   └── 221_abstarct_class.ts
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -955,6 +975,65 @@ TypeScript interfaces for defining object shapes and contracts:
 
 ---
 
+### Chapter 28: Enums
+
+**Files:** `chapter_28_Enum/`
+
+Complete guide to TypeScript enums for defining named constants and improving code readability:
+- **211_Enum.ts** - Introduction to enums: defining `TestStatus` enum with string values (Passed, Failed, Skipped, Blocked)
+- **212_Enum_example.ts** - Numeric enum example: `Severity` levels (Low, Medium, High, Critical, Blocking)
+- **213_enum_real_example.ts** - Real-world enum example: `Browser` enum for launching different browsers with switch statements
+- **214_enum_API.ts** - API testing enum: `HTTPMethod` enum (GET, POST, PUT, DELETE, PATCH) for API request methods
+
+**Key Concepts:**
+- Numeric vs string enums
+- Enums with switch statements for real-world scenarios
+- Using enums for test status, severity levels, browser types, and HTTP methods
+- Type-safe named constants
+
+---
+
+### Chapter 29: Generics
+
+**Files:** `chapter_29_Generic/`
+
+Complete guide to TypeScript generics for creating reusable, type-safe components:
+- **215_generic.ts** - Introduction to generics: generic functions with type parameter `<T>`, non-null assertion operator (`!`)
+- **216_generic_class.ts** - Generic classes: `GetDataStorage<T>` class for storing different data types (numbers, strings)
+- **217_generic_API_response.ts** - Generic API responses: `wrapResponse<T>` function for wrapping API data with status codes
+
+**Key Concepts:**
+- Generic functions with `<T>` type parameter
+- Generic classes for reusable data structures
+- Explicit type specification vs type inference
+- Non-null assertion operator (`!`)
+- Real-world API response wrapping patterns
+- Type safety without sacrificing reusability
+
+---
+
+### Chapter 30: Public, Private, Protected
+
+**Files:** `chapter_30_Public_Private_Protected/`
+
+Complete guide to TypeScript access modifiers and advanced OOP concepts:
+- **218_ppp.ts** - Access modifiers overview: `public`, `private`, `protected` in a real API client class
+- **219_Page_Object_Model.ts** - Protected access in Page Object Model: `BasePage` with protected fields and methods, `LoginPage` extending base
+- **220_Readonly.ts** - Readonly properties: `PlaywrightConfig` class with readonly fields for immutable configuration
+- **221_abstarct_class.ts** - Abstract classes: `BaseTest` abstract class with protected fields and abstract methods, `UITest` implementation
+
+**Key Concepts:**
+- `public` (default) - accessible from anywhere
+- `private` - accessible only within the class
+- `protected` - accessible within class and subclasses
+- `readonly` - immutable properties after initialization
+- Abstract classes and abstract methods
+- Page Object Model with access modifiers
+- Encapsulation with access control
+- Real-world API client and test automation patterns
+
+---
+
 ### Task Live Class
 
 **Files:** `Task_Live_Class/`
@@ -1436,6 +1515,32 @@ npx ts-node 203_Interface_Readonly.ts
 npx ts-node 204_Interface_readonly_example.ts
 ```
 
+### Run Chapter 28 Files (TypeScript)
+```bash
+cd chapter_28_Enum
+npx ts-node 211_Enum.ts
+npx ts-node 212_Enum_example.ts
+npx ts-node 213_enum_real_example.ts
+npx ts-node 214_enum_API.ts
+```
+
+### Run Chapter 29 Files (TypeScript)
+```bash
+cd chapter_29_Generic
+npx ts-node 215_generic.ts
+npx ts-node 216_generic_class.ts
+npx ts-node 217_generic_API_response.ts
+```
+
+### Run Chapter 30 Files (TypeScript)
+```bash
+cd chapter_30_Public_Private_Protected
+npx ts-node 218_ppp.ts
+npx ts-node 219_Page_Object_Model.ts
+npx ts-node 220_Readonly.ts
+npx ts-node 221_abstarct_class.ts
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -1486,6 +1591,10 @@ node Task_Live_Class/15_Task_24th_June.js
 | **Polymorphism** | Method overriding, runtime behavior modification |
 | **TypeScript Basics** | Type annotations, basic types, ts-node, VS Code Code Runner setup |
 | **TypeScript Interfaces** | Interface declarations, optional/readonly properties, object contracts |
+| **TypeScript Enums** | Named constants, numeric/string enums, enums with switch statements, test status, browser types, HTTP methods |
+| **TypeScript Generics** | Generic functions `<T>`, generic classes, type parameters, non-null assertion, reusable type-safe components, API response wrapping |
+| **Access Modifiers** | `public`, `private`, `protected`, `readonly`, encapsulation with access control |
+| **Abstract Classes** | Abstract methods, base classes, implementation classes, test automation patterns |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1521,4 +1630,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: June 29, 2026 — Reorganized OOP chapters (20-25) into separate folders, added TypeScript chapters (26-27), added VS Code Code Runner configuration*
+*Last updated: July 02, 2026 — Added TypeScript chapters: Enums (28), Generics (29), Access Modifiers & Abstract Classes (30)*
