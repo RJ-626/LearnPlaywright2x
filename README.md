@@ -41,6 +41,8 @@ A comprehensive learning repository for **JavaScript fundamentals** and **Playwr
   - [Chapter 28: Enums](#chapter-28-enums)
   - [Chapter 29: Generics](#chapter-29-generics)
   - [Chapter 30: Public, Private, Protected](#chapter-30-public-private-protected)
+  - [Chapter 31: Type Override & Decorators](#chapter-31-type-override--decorators)
+  - [Chapter 32: Playwright Fundamentals](#chapter-32-playwright-fundamentals)
   - [Task Live Class](#task-live-class)
   - [Interview Questions](#interview-questions)
 - [Hoisting and Temporal Dead Zone (TDZ)](#hoisting-and-temporal-dead-zone-tdz)
@@ -357,6 +359,24 @@ LearnPlaywright2x/
 │   ├── 219_Page_Object_Model.ts
 │   ├── 220_Readonly.ts
 │   └── 221_abstarct_class.ts
+│
+├── chapter_31_Type_Override_Decorators/          # Type Override & Decorators
+│   ├── 222_Type_Assertion.ts
+│   ├── 223_Type_As.ts
+│   ├── 224_Override.ts
+│   ├── 225_IQ.ts
+│   ├── 226_Decorators.ts
+│   ├── 227_Decorators_example.ts
+│   └── 228_multiple_Decorator.ts
+│
+├── chapter_32_Playwright_Fundamentals/           # Playwright Fundamentals
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── playwright.config.ts
+│   ├── tsconfig.json
+│   └── tests/
+│       └── example.spec.ts
 │
 ├── Task_Live_Class/                            # Live Class Tasks & Assignments
 │   ├── 01_Task_29th_April.js
@@ -1034,6 +1054,58 @@ Complete guide to TypeScript access modifiers and advanced OOP concepts:
 
 ---
 
+### Chapter 31: Type Override & Decorators
+
+**Files:** `chapter_31_Type_Override_Decorators/`
+
+Complete guide to TypeScript type assertions, the `override` keyword, and decorators:
+- **222_Type_Assertion.ts** - Type assertions with `as` and angle-bracket syntax for overriding inferred types
+- **223_Type_As.ts** - Practical `as` type assertion examples with HTML elements and API responses
+- **224_Override.ts** - Using the `override` keyword for explicit method overriding in subclasses
+- **225_IQ.ts** - Type override and assertion interview questions
+- **226_Decorators.ts** - Introduction to TypeScript decorators: class, method, and property decorators
+- **227_Decorators_example.ts** - Practical decorator examples with metadata and logging
+- **228_multiple_Decorator.ts** - Stacking multiple decorators on a single class or method
+
+**Key Concepts:**
+- Type assertions (`as`, `<Type>`) for narrowing or widening types
+- `override` keyword for safe method overriding in inheritance hierarchies
+- TypeScript decorators and `experimentalDecorators` compiler option
+- Class, method, property, and parameter decorators
+- Decorator composition and execution order
+- Real-world decorator patterns (logging, validation, metadata)
+
+---
+
+### Chapter 32: Playwright Fundamentals
+
+**Files:** `chapter_32_Playwright_Fundamentals/`
+
+Fundamentals of Playwright test automation with proper TypeScript ESM configuration:
+- **.gitignore** - Playwright ignore patterns (node_modules, test-results, playwright-report, blob-report, cache, auth)
+- **package.json** - ESM module configuration with Playwright (`@playwright/test`) and Node.js type definitions (`@types/node`)
+- **package-lock.json** - Lock file ensuring consistent dependency versions
+- **playwright.config.ts** - Playwright test configuration: Chromium project, HTML reporter, CI-aware workers and retries
+- **tsconfig.json** - Local TypeScript config extending workspace settings with `"types": ["node"]`
+- **tests/example.spec.ts** - Sample Playwright test verifying the TTACart page title
+
+**Key Concepts:**
+- Playwright project setup with ESM (`"type": "module"`)
+- TypeScript strict-mode compatibility (`verbatimModuleSyntax`, `exactOptionalPropertyTypes`)
+- Playwright test fixtures (`page`, `expect`)
+- Browser automation with `page.goto()` and `expect(page).toHaveTitle()`
+- Playwright HTML reporter and trace collection
+- CI-aware configuration with `forbidOnly`, `retries`, and `workers`
+
+**Setup:**
+```bash
+cd chapter_32_Playwright_Fundamentals
+npm install
+npx playwright test
+```
+
+---
+
 ### Task Live Class
 
 **Files:** `Task_Live_Class/`
@@ -1541,6 +1613,31 @@ npx ts-node 220_Readonly.ts
 npx ts-node 221_abstarct_class.ts
 ```
 
+### Run Chapter 31 Files (TypeScript)
+```bash
+cd chapter_31_Type_Override_Decorators
+npx ts-node 222_Type_Assertion.ts
+npx ts-node 223_Type_As.ts
+npx ts-node 224_Override.ts
+npx ts-node 225_IQ.ts
+npx ts-node 226_Decorators.ts
+npx ts-node 227_Decorators_example.ts
+npx ts-node 228_multiple_Decorator.ts
+```
+
+### Run Chapter 32 Tests (Playwright)
+```bash
+cd chapter_32_Playwright_Fundamentals
+npm install
+npx playwright test
+```
+
+### Run Chapter 32 Tests (Headed)
+```bash
+cd chapter_32_Playwright_Fundamentals
+npx playwright test --headed
+```
+
 ### Run Task Live Class Files
 ```bash
 node Task_Live_Class/01_Task_29th_April.js
@@ -1595,6 +1692,8 @@ node Task_Live_Class/15_Task_24th_June.js
 | **TypeScript Generics** | Generic functions `<T>`, generic classes, type parameters, non-null assertion, reusable type-safe components, API response wrapping |
 | **Access Modifiers** | `public`, `private`, `protected`, `readonly`, encapsulation with access control |
 | **Abstract Classes** | Abstract methods, base classes, implementation classes, test automation patterns |
+| **Type Override & Decorators** | Type assertions (`as`, `<Type>`), `override` keyword, TypeScript decorators, decorator composition |
+| **Playwright Fundamentals** | ESM setup, TypeScript strict-mode compatibility, browser automation, test fixtures, HTML reporter |
 | **Strings** | Creating strings, properties, searching, extracting, transforming, conversion, string methods cheat sheet |
 | **Loops** | `for`, `while`, `do...while`, `for...in`, `for...of`, `forEach`, interview questions |
 | **Live Tasks** | Hands-on assignments from live sessions |
@@ -1630,4 +1729,4 @@ Created for learning JavaScript and Playwright automation testing basics.
 
 ---
 
-*Last updated: July 02, 2026 — Added TypeScript chapters: Enums (28), Generics (29), Access Modifiers & Abstract Classes (30)*
+*Last updated: July 05, 2026 — Added Chapter 31 (Type Override & Decorators) and Chapter 32 (Playwright Fundamentals)*
