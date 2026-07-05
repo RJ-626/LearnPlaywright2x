@@ -386,7 +386,7 @@ LearnPlaywright2x/
 │   ├── 05_Task_13th_May.js
 │   ├── 06_Task_15th_May.js
 │   ├── 07_Task_18th_May.js
-│   ├── 08_Task_Live_20th May.js
+│   ├── 08_Task_20th May.js
 │   ├── 09_Task_20th_May.js
 │   ├── 10_Task_22th_May.js
 │   ├── 11_Task_03rd_June.js
@@ -1118,7 +1118,7 @@ Hands-on tasks and assignments from live learning sessions:
 - **05_Task_13th_May.js** - Task from 13th May session
 - **06_Task_15th_May.js** - Task from 15th May session
 - **07_Task_18th_May.js** - Task from 18th May session
-- **08_Task_Live_20th May.js** - Task from 20th May live session
+- **08_Task_20th May.js** - Task from 20th May live session
 - **09_Task_20th_May.js** - Task from 20th May session
 - **10_Task_22th_May.js** - Task from 22nd May session
 - **11_Task_03rd_June.js** - Task from 3rd June session
@@ -1647,7 +1647,7 @@ node Task_Live_Class/04_Task_11th_May.js
 node Task_Live_Class/05_Task_13th_May.js
 node Task_Live_Class/06_Task_15th_May.js
 node Task_Live_Class/07_Task_18th_May.js
-node "Task_Live_Class/08_Task_Live_20th May.js"
+node "Task_Live_Class/08_Task_20th May.js"
 node Task_Live_Class/09_Task_20th_May.js
 node Task_Live_Class/10_Task_22th_May.js
 node Task_Live_Class/11_Task_03rd_June.js
